@@ -1,0 +1,68 @@
+FileZilla
+
+웹페이지(사이트) 구성요소
+	: homepage
+	: web publisher
+	* front end
+ 	HTML ( Hyper Text Markup Lang)
+		:구조
+		:메모장(컨텐츠)
+	CSS(Cascading Style Sheet)
+		:디자인
+		:워드(이쁘게)
+	JS(Javascript / ECMAScript)
+		:기능
+		:동적기능
+		:프로그램
+문법적 표준 : w3c
+	https://www.w3.org/
+	표준 - 강제(X) - 권고안
+		크롬
+		익스플로러
+HTML
+	참고 사이트
+	w3schools.com
+
+	Hyper Text
+		링크
+		여러 문서 연결 기능
+	+
+	Markup Language
+	:markup 중심으로 기능 표현 언어
+		markup == tag == <기능>
+	
+	html 		1989
+	html 4		1999
+	html 5		2008 -> 2014
+		* 모바일
+	windows 7 - explorer(html5 지원이 거의 안됨)
+	windows 10 - edge(html5 지원이 좋음)
+	
+	http://html5test.com/
+
+	html 코딩
+		메모장...
+
+		메모장 + 코딩
+		Visual Studio Code (*)
+		https://code.visualstudio.com/
+		
+
+		atom
+		Sublime Text
+
+		1. *.html / htm => html 해석기 - 브라우저(edge)
+		file:///C:/html/ex01.html
+
+		*문법 검사를 철저하게 안함(*)
+			에러 X - 구조 디자인이 잘못 표현됨
+		<!doctype html>	-html 버전
+		<html>		-html 시작
+		<head>		-문서 전체의 선언 부분
+		</head>		
+		<body>		- 문서 내용
+		</body>
+		</html>
+		주석, comment - 해석않고 소스에 적는 내용 ...
+				=> 해설
+		http://www.csszengarden.com
