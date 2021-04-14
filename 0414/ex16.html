@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <!--
+               전송 처리
+               action : 입력 데이터를 처리 할 페이지
+               method : 전송방식 (get/post)
+               enctype
+
+               http://127.0.0.1:8080//test.jsp?id=ffsda&pwd=1341324
+               http                     전송 protocol
+               localhost                도메인
+               8080                     포트
+               test.jsp                 처리페이지
+               ?                        구분자
+               id=ffsda&pwd=1341324     쿼리스트링
+        -->
+       <form action="test.jsp" method="get">
+            아이디<input type="text" name="id"/>
+            비밀번호<input type="password" name="pwd"/>
+            <br /><br />
+            <input type="submit" /><br /><br />
+
+           
+        </form>
+    </body>
+</html>

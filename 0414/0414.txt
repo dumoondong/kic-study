@@ -1,0 +1,122 @@
+web design
+	homepage < web page / web site
+
+	html
+		구조
+	css
+		디자인
+	javascript
+		기능
+
+web site
+	* html
+		= > 온라인 문서(논문) 공유 형태
+		* 온라인(인터넷)
+html 편집하는 방법
+	메모장
+	에디터
+		visual studio code
+* 브라우저의 기능
+	1.원격의 웹서버에서 html을 요청하는 기능
+	2.html 문서 내부의 태그를 해석하는 기능
+*jdk
+	www.oracle.com
+*apache-tomcat
+	tomcat.apache.org
+	웹서버 -html 문서를 웹상에 공개
+		압축해제...
+		서버 시작
+1. cd C:\html\apache-tomcat-9.0.45\bin
+2. catalina.bat run
+	아파치 톰캣 웹서버를 시작했다.
+	=> 특정 디렉토리에 html 문서를 볼 수 있게 개방했다
+	=> startup.bat / shutdown.bat
+http://localhost:8080/ 	도메인
+http://127.0.0.1:8080/	아이피
+
+document root
+	C:\html\apache-tomcat-9.0.45\webapps\ROOT
+<!-- 상대경로 -->
+        <a href="./dir1/dir1.html">dir1.html</a><br />
+<!-- 웹경로 -->
+        <a href="http://127.0.0.1:8080//dir1/dir1.html">dir1.html</a><br />
+        <a href="http://m.daum.net">모바일 다음</a><br />
+<!-- 이미지나 브라우저가 알 수 있는 파일 형식이면 열어서 보여준다. -->
+        <a href="./images/image.png">이미지</a><br />
+<!-- 브라우저가 알 수 없는 파일 형식(이미지..)이면 다운로드-->
+        <a href="./apache-tomcat-9.0.45-windows-x64.zip">파일</a><br />
+
+border = 외곽선 
+colspan = 옆 병합
+rowsapn = 위아래 병합
+align = "center"
+valign="top"
+
+RGB 
+color
+            1. 알려진 이름 :red, yellow
+            2. RGB(Red,Green,Blue) - 16진수
+이미지
+                배경화면 : background 속성
+                            =>반복되어서 출력됨
+                데이터 : <img>
+		background="./images/image.png"
+	    데이터로서의 이미지
+                    <img src= "./images/image.png"width="200"/> 
+<caption> = 제목
+<th> = 제목줄
+cellpadding= 셀과 글자 사이의 간격 조정
+cellspacing= 셀과 셀 간의 간격
+순서가 있는 목록
+<ol> start = "10"
+순서가 없는 목록 
+<ul> type = "square"
+사전식 목록 
+<dl>
+            <dt>사과</dt>  = 내용
+            <dd>사과는 맛있다.</dd> = 설명
+<iframe src="https://m.daum.net" width="640" height="800"></iframe>
+다른 문서를 포함시킬때 사용
+
+<tr>
+                <td width="150" vlign="top">
+                    <ul>
+                        <li><a href="http://www.etnews.com" target="child">전자신문</a></li>
+                        <li><a href="http://www.zdnet.co.kr" target="child">지디넷 코리아</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <iframe src="https://m.daum.net" name="child" width="100%" height="800"></iframe>
+                </td>
+</tr>
+
+사용자 입력
+           form
+입력받는 태그 
+	한줄 입력 도구
+	<input type="text"/>
+	여러줄 입력 도구
+	<textarea>
+	다중 선택
+	<input type="checkbox" />
+	단일 선택
+	<input type="radio" name="r"/>
+	
+전송 처리
+               action : 입력 데이터를 처리 할 페이지
+               method : 전송방식 (get/post)
+               enctype
+
+	<form action="test.jsp" method="get">
+            	아이디<input type="text" name="id"/>
+            	<br /><br />
+            	<input type="submit" /><br /><br />
+	</form>
+
+https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=d
+
+ <form action="https://search.daum.net/search" method="get">
+            검색어 <input type="text" name="q"/>
+            <input type="submit" value = "다음에서 검색" /><br /><br />
+            <input type="image" src="./images/daum.PNG" /><br /><br />
+  </form>

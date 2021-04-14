@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+       <!-- 
+           사용자 입력
+           form
+            입력받는 태그 
+       -->
+       <form>
+           <!--한줄 입력 도구-->
+           <input type="text"/><br /><br />
+           <input type="text" size="50" /><br /><br />
+           <input type="text" size="50" maxlength="20" /><br /><br />
+           <input type="text" size="50" maxlength="20" value="초기값"/><br /><br />
+           <input type="text" size="50" maxlength="20" value="초기값" readonly/><br /><br />
+           <input type="text" size="50" maxlength="20" placeholder="값 입력"/><br /><br />
+
+           <input type="password"/><br /><br />
+
+           <!--여러줄 입력 도구-->
+           <textarea></textarea><br /><br />
+           <textarea rows="5" cols="50"></textarea><br /><br />
+           <!-- pre -->
+           <textarea rows="5" cols="50">초기값</textarea><br /><br />
+           <textarea rows="5" cols="50" placeholder="값 입력"></textarea><br /><br />
+            <!-- 다중 선택 -->
+           <input type="checkbox" />사과<br /><br />
+           <input type="checkbox" checked/>참외<br /><br />
+           <input type="checkbox" />수박<br /><br />
+           <input type="checkbox" />딸기<br /><br />
+
+           <!-- 단일 선택 -->
+           <input type="radio" name="r"/>사과<br /><br />
+           <input type="radio" name="r"checked/>참외<br /><br />
+           <input type="radio" name="r"/>수박<br /><br />
+           <input type="radio" name="r"/>딸기<br /><br />
+
+           <select>
+               <option>사과</option>
+               <option>참외</option>
+               <option>수박</option>
+               <option>딸기</option>
+           </select>
+       </form>
+    </body>
+</html>
