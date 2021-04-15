@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+            <meta charset="utf-8" />
+            <style type="text/css">
+               /*
+                    attribute selector
+               */
+               a {background-color: yellow;}
+               a[target] {background-color: red;}
+               /* a[target="_blank"] {background-color: green;} */
+               /*단어*/
+               a[target~="_blank"] {background-color: blue;}
+            </style>
+        </head>
+        <body>
+           <a href = "http://m.naver.com">네이버</a><br /><br />
+           <a href = "http://m.naver.com" target="_top1 _blank _top2">네이버</a><br /><br />
+           <a href = "http://m.naver.com" target="_top">네이버</a><br /><br />
+
+        
+        </body>
+    </html>

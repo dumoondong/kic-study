@@ -1,0 +1,89 @@
+html 문법
+	=> markup에 대해서
+1. 설치/설정
+	web designer (x)
+	web 개발자 -> 서버 설정
+			로컬 파일 -> 원격 파일(http://도메인 ...)
+	*설치 위치
+	*재현성 <- 여러번 / 정리
+서버
+	jdk가 있고
+		환경설정 후
+	apache- tomcat 가 시작
+			catalina.bat run / ctrl +c
+			startup.bat / shutdown.sh
+
+	visual studio code
+2.html
+	<!doctype html>			-html
+	<html>				-태그시작 element
+						lang="ko" 태그 속성 (atribute)
+		<head>			-전체에 대한 선언
+			<title></title>
+			<meta charset = "utf-8" />
+			<link rel = "shortcut icon" type = "image/x-icon" href="">
+		</head>
+		<body>			-내용
+		</body>
+	</html
+
+3. body
+	<br />, &nbsp;
+	<hr />
+	<h1> ~ <h6>
+	문단 영역
+	<p>, <div>, <span>
+	semantic tag
+			<aside>...
+	참조
+		<pre>,<blockquote>
+	포맷
+		<b>/<strong>,<i>/<em>
+		<sub>,<sub>
+	이미지 	-종류/경로
+		<img/>
+	링크 - hyper text - anchor
+		<a>
+	표	-> layout, 중첩 => div + css
+		<table>, <tr>, <td>, <th>, <caption>
+		*color
+		*background 	-배경 이미지
+		*bgcolor		-배경색
+	목록
+		순서가 없는 목록
+			<ul>,<li>
+		순서가 있는 목록
+			<ol>,<li>
+		사전식 목록
+			<dl>,<dt>,<dd>
+	내부창
+		<iframe>
+개발자를 위한 태그
+	<form>
+		action		-처리 페이지
+		method		-전송 방법( get(*,url 데이터가 보임)/ post)
+		<input type = "text"/>
+		<input type = "password" />
+		<textarea>
+		<input type = "checkbox" />
+		<input type = "radio"/>
+		<select>, <option>
+		<input type = "file" />
+		<input type = "color" />
+		<input type = "date" />
+		<input type = "number" />
+		<input type = "range" / >
+		*
+		<input type = "text"/>,<datalist>,<option>
+		*
+		<input type = "submit" />
+		<input type = "image"/>
+
+CSS - Cascading(점진적인)
+	*html에 디자인을 적용하는 방법
+	*web designer / publisher(기능, html)
+http://www.csszengarden.com
+
+
+
+

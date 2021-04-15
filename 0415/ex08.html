@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+            <meta charset="utf-8" />
+            <style type="text/css">
+               /*
+                    자손,후손
+               */
+               /*div > p {color: red;}*/
+               /* div p {color: red;} */
+               /* 형제관계 */
+               /* div +p {color: red;} */
+               div ~p {color: red;}
+            </style>
+        </head>
+        <body>
+        <!-- 계층 구조 : DOM(Document Object Model) Tree -->
+        <div>
+            <p>Hello CSS2</p>
+            <span>
+                <p>Hello CSS3</p>
+            </span>
+            <p>Hello CSS4</p>
+        </div>
+        <p>Hello CSS5</p>
+        <p>Hello CSS6</p>
+        </body>
+    </html>
