@@ -1,0 +1,55 @@
+html
+	미디어 처리
+	*svg - graphic
+css
+	구조적으로 표현된 html에 디자인 부가는 방법
+	방법
+		1. <태그 style="">
+		-------------------------------
+		2.<head>
+		3.외부파일에 저장
+			<link
+			*.css
+	selector
+		simple selector
+			tag		-tag 집합
+			class		-class로 선언된 태그의 집합
+			id		-id로 선언된 태그(한개만)
+		combinator selector
+			space, > / +,~
+		pseudo class selector
+			태그:클래스명
+			cf> a
+		pseudo elements selector
+			태그::속성
+		attribute selector
+			태그[속성]
+			태그[속성 비교 값]
+	속성
+		background
+			background-color
+			background-image			*반복된다
+		text
+			color
+			text-align
+			text-decoration
+			text-transformation
+			text-indent / letter-spacing / line-height / word-spacting
+			* text-shadow
+		font
+			기본폰트
+				font-family
+				font-size		px,em,%
+				font-style
+				font-weight bold
+			web font
+				https://fonts.google.com/
+				@font-face{
+					font-family:
+					src=url()
+				}
+		list
+layout
+	1.table
+	2.div + css
+	3.semantic + css
