@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">  
+            'use strict';
+            document.write('<table border = "1" width="800">');
+                //행과 열이 있는 데이터는 이중 반복문(루프)
+            //    for(let i=1; i<=3; i++){
+            //        for(let j=1; j<=3; j++){
+            //            console.log(i,j);
+            //        }
+            //    }
+
+            //    for(let row=1; row<=10; row++){
+            //        console.log('*********');
+            //    }
+            //    for(let row=1; row<=10;row++){
+            //        let star = ''
+            //        for(let col=1; col<=10; col++){
+            //            star = star+ '*'
+            //            console.log(star);
+            //        }
+            //    }
+               for(let row=1; row<=10;row++){
+                   let star = ''
+                   for(let col=1; col<=11-row; col++){
+                       star = star+ '*'
+                   }
+                       console.log(star);
+                   }
+               
+        </script>
+      
+    </body>
+</html>

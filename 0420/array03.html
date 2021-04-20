@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            
+            let arr1 = [1,2,3,4];
+            let arr2 = ["1","2","3","4"];
+            let arr3 = [true,false];
+            //가능하면 사용하지 말자
+            let arr4 = [273,'string1',"string2",false];
+            console.log(arr1);
+            console.log(arr2);
+            console.log(arr3);
+            console.log(arr4);
+            //문자열도 내부적으로는 배열이다.
+            let str = 'abcdf';
+            console.log(str.length);
+            console.log(str[0]);
+            console.log(str[str.length-1]);
+        </script>
+    </body>
+</html>

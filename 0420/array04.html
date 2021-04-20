@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            //값을 복사 - 깊은 복사
+            let num1 = 10;
+            let num2 = num1;
+            console.log('num1', num1);
+            console.log('num2', num2);
+            //복사
+            num2= 20;
+
+            console.log('num1', num1);
+            console.log('num2', num2); 
+
+            //주소를 복사 - 얕은 복사
+            let arr1 = [1,2,3];
+            let arr2 = arr1;
+
+            console.log('arr1:',arr1);
+            console.log('arr2:',arr2);
+
+            arr2[0]=10;
+            console.log('arr1:',arr1);
+            console.log('arr2:',arr2);
+        </script>
+    </body>
+</html>

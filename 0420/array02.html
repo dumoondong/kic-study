@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            //선언과 동시에 초기화
+            let arr1 = [1,2,3,4];
+            //선언
+            let arr2 = [];
+            //초기화
+            arr2[0] = 1;
+            arr2[1] = 2;
+            arr2[2] = 3;
+            arr2[3] = 4;
+            let arr3;
+            arr3 = [1,2,3,4];
+
+            console.log(arr1);
+            console.log(arr2);
+            console.log(arr3);
+
+            //전체 데이터 확인
+            console.log(arr1[0]);
+            console.log(arr1[1]);
+            console.log(arr1[2]);
+            console.log(arr1[3]);
+            //for문
+            for(let i=0; i<arr1.length; i++){
+                console.log(arr1[i]);
+            }
+
+            //향상된 for / for in
+            for(let index in arr1){
+                console.log(index,arr1[index]);
+            }
+        </script>
+    </body>
+</html>
