@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            //1차원 배열
+            let arr1 = [1,2,3];
+            //2차원 배열
+            //1차원 배열 안에 1차원 배열 있는 형태
+            let arr2 = [
+                [10,20,30],
+                [40,50,60],
+                [70,80,90],
+            ]
+
+            console.log(arr2);
+            console.log(arr2[0]);
+            console.log(arr2[1]);
+            console.log(arr2[2]);
+
+            //행과 열
+            console.log(arr2[0][0],arr2[0][1],arr2[0][2]);
+            console.log(arr2[1][0],arr2[1][1],arr2[1][2]);
+            console.log(arr2[2][0],arr2[2][1],arr2[2][2]);
+
+            console.log(arr2.length);       //행의갯수
+            console.log(arr2[0].length);    //열의갯수
+            //배열 전체의 데이터를 가져오는 방법
+            //for
+            for(let row=0; row<arr2.length; row++){
+                for(let col=0; col<arr2[row].length; col++){
+                    console.log(arr2[row][col]);
+                }
+            }
+
+            //for ~in
+            for(let rowIndex in arr2){
+                for(let colIndex in arr2[rowIndex]){
+                    console.log(arr2[rowIndex][colIndex]);
+                }
+            }
+
+            //
+            let arr3 = [
+                [10],
+                [40,50],
+                [70,80,90],
+            ]
+
+            for(let rowIndex in arr3){
+                for(let colIndex in arr3[rowIndex]){
+                    console.log(arr3[rowIndex][colIndex]);
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
