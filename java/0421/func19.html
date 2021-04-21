@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            //세 자리를 입력받아서 정렬해서 출력하는 sortNumber 함수 만들기
+            let sortNumber = function(value1,value2,value3){
+                if(value1>=value2 && value1>=value3){
+                    if(value2>=value3){
+                        console.log(value1,value2,value3);
+                    }else{
+                        console.log(value1,value3,value2);
+                    }
+                }else if(value2>=value1 && value2>=value3){
+                    if(value1>=value3){
+                        console.log(value2,value1,value3);
+                    }else{
+                        console.log(value2,value3,value1);
+                    }
+                }else if(value3>=value1 && value3>=value2){
+                    if(value2>=value1){
+                        console.log(value3,value2,value1);
+                    }else{
+                        console.log(value3,value1,value2);
+                    }
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let result = sortNumber(18,16,12);
+            console.log(result);
+        </script>
+    </body>
+</html>

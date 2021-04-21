@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+          
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           'use strict';
+           //전역
+           let sports = '축구';
+           let music='재즈';
+            //중복선언
+            //let sports = '야구';
+           const get = function(){
+               //지역 :{}
+               let music= '클래스';
+               
+               if(true){
+                   let music = '팝';
+                    console.log(sports);
+                    console.log(music);
+               }
+               console.log(sports);
+               console.log(music);
+
+           };
+            console.log(sports);
+            console.log(music);
+           get();
+        </script>
+    </body>
+</html>
