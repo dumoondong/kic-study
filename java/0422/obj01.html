@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            
+            let arr1 = [];          // 배열
+            let obj1 = {};           //객체
+
+            console.log(typeof arr1);   //배열도 객체
+            console.log(typeof obj1);
+            //객체를 선언하고 초기화
+            let product1 = {
+                name: '7D 건조 망고',
+                type: '당절임',
+                components: '망고,설탕,기타',
+                region: '필리핀'
+            };
+
+            console.log(product1);
+
+            // 접근 방법
+            console.log(product1['name']);
+            // . : 객체참조 연산자
+            console.log(product1.name);
+
+            //값 변경
+            product1.name = '3D 건조 딸기';
+            console.log(product1.name);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //객체 생성형 함수
+            let makeStudent = function(name,kor,mat,eng,sci){
+                let obj ={
+                    name: nam,
+                    kor: kor,
+                    mat: mat,
+                    eng: eng,
+                    sci: sci,
+
+                    getSum: function(){
+                        return this.kor + this.mat + this.eng + this.sci;
+                    }
+                };
+                return obj;
+            }
+            //생성 및 초기화
+            let stu1 = makeStudent('홍길동',96,98,92,98);
+            let stu2 = makeStudent('박문수',98,90,91,97);
+
+            console.log(stu1);
+            console.log(stu2);
+
+            console.log(stu1.getSum());
+            console.log(stu2.getSum());
+        </script>
+    </body>
+</html>

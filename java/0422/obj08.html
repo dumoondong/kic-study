@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //함수의 이름은 대분자료 시작
+            // = 생성자
+            let makeStudent = function(name,kor,mat,eng,sci){
+                    this.name = name;
+                    this.kor = kor;
+                    this.mat = mat;
+                    this.eng = eng;
+                    this.sci = sci;
+                    
+                    this.getSum = function(){
+                        return this.kor + this.mat + this.eng + this.sci;
+                    }
+                }
+                
+            //생성 및 초기화
+            //new 메모리 생성연산자
+            //객체변수 / 참조변수
+            let stu1 = new student('홍길동',96,98,92,98);
+            let stu2 = new student('박문수',98,90,91,97);
+
+            console.log(stu1);
+            console.log(stu2);
+
+            console.log(str1.getSum());
+            console.log(stu2.getSum());
+
+            console.log(stu1 instanceof Student);
+            console.log(stu1 instanceof Number);
+
+        </script>
+    </body>
+</html>

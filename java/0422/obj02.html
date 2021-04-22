@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+
+            let product1 = {
+                name: '7D 건조 망고',
+                type: '당절임',
+                components: '망고,설탕,기타',
+                region: '필리핀'
+            };
+            //얕은 복사
+            let product2 = product1;
+            console.log(product2.name);
+            console.log(product1.name);
+            product2.name = '3D 건조 딸기';
+            console.log(product2.name);
+            console.log(product1.name);
+        </script>
+    </body>
+</html>

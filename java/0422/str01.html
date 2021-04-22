@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            let str1 = 'Hello String';              //string
+            let Str2 = new String('Hello String');  //object
+
+            //String - 문자열 조작 방법(***)
+
+            //문자열의 길이
+            console.log(str1.length);
+
+            //문자열에서 문자 추출
+            let char1 = str1.charAt(0);
+            console.log(char1);
+            console.log(str1.charAt(0));
+            console.log(str1[0]);
+
+            console.log(str1.charAt(str1.length -1));
+
+            //문자열에서 일부 문자열 추출
+        
+            console.log(str1.substr(0,1));
+            console.log(str1.substring(3,5));
+            console.log(str1.slice(3,5));
+
+            //위치검색
+            //Hello String
+            console.log(str1.indexOf('1'));
+            console.log(str1.lastIndexOf('1'));
+            //-1
+            console.log(str1.lastIndexOf('z'));
+
+            //대소문자 변환
+            console.log(str1.toUpperCase());
+            console.log(str1.toLowerCase());
+            //*
+            console.log('ABC'.toLowerCase());
+
+            //문자열 치환
+
+            //첫번째 문자열
+            console.log(str1.replace('Hello','안녕'));
+            //전체 문자열 변경
+            let str3 = 'Hello String Hello String Hello String';
+            console.log(str3.replace(/<Hello>/g,'안녕'));
+
+            //문자열 결합
+            console.log(str1.concat(1,2,3));
+            //양끝의 공백제거
+            let str4= ' aaaa bbbb cccc       ';
+            console.log(str4,str4.length);
+            console.log(str4.trim(),str4.trim().length);
+
+            let str5='사과 딸기 수박 참외';
+            let arr1 = str5.split(' ');
+            for(let i in arr1){
+                console.log(arr1[i]);
+            }
+
+          
+
+        </script>
+    </body>
+</html>
