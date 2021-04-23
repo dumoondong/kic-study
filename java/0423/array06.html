@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+           for(let i =1; i<=5; i++){
+               let lottos = new Array();
+               for(let j=1; j<=6; j++){
+                    let num = parseInt(Math.random()*45)+1;
+                    if(lottos.indexOf(num)== -1){
+                        lottos.push(num);
+                    }else{
+                        j--;
+                    }
+               }
+               console.log(lottos);
+           }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let arr1 = new Array(10,20,30,40);
+            let arr2 = new Array(5,6,7,8);
+            
+            console.log(Array.isArray(arr1));
+            console.log(Array.isArray(1));
+            //위치 찾기
+            console.log(arr1.indexOf(4));
+            console.log(arr1.indexOf(5));
+            console.log(arr1.lastIndexOf(4));
+            //for in/ for of
+            for(let i = 0 ; i<arr1.length; i++){
+                console.log(arr1[i]);
+            }
+
+            //foreach
+            arr1.forEach(function(e,index){
+                console.log('loop',e,index);
+            });
+
+            let sum = 0;
+            arr1.forEach(function(e){
+                sum += e;
+            });
+            console.log('합계:',sum );
+            
+            //배열내부의 데이터 일괄적으로 변경
+            let arr3 = arr1.map(function(e){
+                return e *e;
+            });
+            console.log(arr3);
+            
+            //일부 검색된 문자열 추출
+            let arr4 = new Array(1,2,3,4,5,6,7,8,9);
+
+            let result = arr4.filter(function(e){
+                return e <=5;
+            })
+            console.log(result);
+        </script>
+    </body>
+</html>

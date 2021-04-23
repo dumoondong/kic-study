@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+           const winopen = () => {
+                let width = 600;
+                let height = 800;
+
+                let left = screen.width / 2 -width / 2;
+                let top = screen.height / 2 - height / 2;
+               
+                //let option = 'top='+top+',left='+left+',width='+width+',height='+height;
+                //template 문자열
+                let option = `top=${top},left=${left},width=${width},height${height}`;
+                open('https://m.daum.net','winopen',option);
+           };
+        </script>
+    </head>
+    <body>
+        <a href="javascript:winopen()">다음 열기</a>
+    </body>
+</html>
