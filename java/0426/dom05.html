@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+          //문서 전부 dom tree 만든후 ECMAScript 실행
+            //동작 시점 - 이벤트
+
+            //자동
+            window.onload = () =>{
+                console.log(document.frm1);
+                console.log(document.frm1.action)
+            }
+            //수동
+            const checkfrm =() =>{
+                console.log(document.frm1);
+                console.log(document.frm1.action)
+            }
+        </script>
+    </head>
+    <body>
+        <!-- 사용자 입력 검사 : form -->
+        <form action="test1.jsp" method="get" name="frm1"></form>
+        <form action="test2.jsp" method="post" name="frm2"></form>
+        <a href="javascript:checkfrm()">form 문에 접근</a>
+    </body>
+</html>

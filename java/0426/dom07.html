@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            const checkfrm =() =>{
+                //입력값의 검사
+                //처리
+                //출력
+                if(document.frm.data1.value == ''){
+                    //오류
+                    alert('이름을 입력해 주세요');
+                }else{
+                    //정상
+                    let words = document.frm.data1.value.split('');
+                    let result = '';
+                    for(let i in words){
+                        result += words[i].substring(0, 1).toUpperCase() + words[i].substring(1) + ' ';
+                    }
+                    document.frm.data2.value=result;
+                }
+                // let data1 = document.frm.data1.value;
+                // document.frm.data2.value = data1.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+        <!-- 사용자 입력 검사 : form -->
+        <form action="test1.jsp" method="get" name="frm">
+             변경 전 이름 :<input type = "text" name="data1"/><br />
+             변경 후 이름 :<input type = "text" name="data2"/><br />
+             <input type="button" value="이름 변경" onclick="checkfrm()"/>
+        </form>
+        
+        <!-- <a href="javascript:checkfrm()">form 문에 접근</a> -->
+    </body>
+</html>
