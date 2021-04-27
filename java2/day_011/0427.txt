@@ -1,0 +1,96 @@
+Web Page
+	psd
+		html
+		css
+			-designer / publisher
+	ecmascript 기초
+		* 개발자의 기본 .... : 프로그램 언어의 구성
+	ecmascript <- jsp
+
+	*정리	<- 찾을
+
+* Java		<- jsp 동적 웹페이지(회원가입, 게시판, 쇼핑몰 ..)
+	*책 중심
+
+1.컴파일 언어
+	*.java	->컴파일 ->*.clsss ->실행
+2.
+	os(platform)
+		개인 pc -windows / masos
+		서버 pc -Unix/Linux
+				c/ c++	-어려움
+				java
+3. 자바 언어의 발전
+1.0 -> 1.1 ->1.5(5) ->1.8(8) ...->1.16
+
+4.개발 환경 구축
+	JDK - JAVA DEVELOPMENT KIT	Oracle
+		JRE - Java Runtime Environment
+			JVM -Java Virtural Machine
+			시스템 라이브러리
+		utility -컴파일러, 디버거
+
+	Java SE	-Standard Edition
+	Java EE	-Enterprise Edition
+		*Enterprise 기업용(대용량 / 분산)
+		*se에 확장 라이브러리 추가
+	Java ME	-Mobile(Embeded) Edition
+		*se에 확장 라이브러리 추가
+
+1.자바 이런거였어? Java 프로그래밍
+*2. 자바의 정석(2권)
+
+*동영상
+https://www.opentutorials.org/module/516
+
+https://www.youtube.com/channel/UCysbIC7UOmikXX8IB7QZMDA
+
+http://cafe.naver.com/javachobostudy/
+
+1.컴파일 명령어 : javac.exe
+	소스 편집
+		*메모장 -> visual studio code
+		*java 소스 전문 편집도구 :IDE
+			eclipse	(무료)
+			intellij	(무료/유료)
+2.실행 명령어 : java.exe
+
+3.
+public class 클래스명{
+	public static void main(String[] args){
+	}
+}
+1.클래스명 = 파일명	:대문자로 시작
+2.public static void main	:프로그램 시작 -> 끝
+
+*출력구문
+	System.out.println(" ");
+환경변수
+	
+
+javac HelloWorld.java
+javac -encoding utf-8 HelloWorld.java
+class 생기면
+java HelloWorld
+
+자료형
+
+1.기본 자료형(객체 X)
+
+	논리형(booblean)
+		-true / false
+	문자형(character - char)
+		-문자 한자
+		-'값'
+	정수형(integer - long / int / short / byte)
+		- 진수
+	실수형(double)
+		- float/double(*)
+		- 지수
+
+	*문자열
+		-객체형
+		-"값"
+2.객체 자료형 - 복합 자료형
+	멤버 변수
+	메서드
