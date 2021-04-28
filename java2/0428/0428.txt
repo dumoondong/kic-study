@@ -1,0 +1,79 @@
+어제 부터 자바 프로그래밍
+	-Javascript 매우 유사한데 ...좀 더 형식(딱딱한)이 강한 언어
+	*C/C++
+*환경설정
+	JDK
+		JRE			-java.exe
+			JVM
+		-javac.exe
+	*java se/ ee/ met
+
+*소스(클래스명.java)--> 컴파일 -->클래스명.class --> 실행
+
+public class 클래스명{
+	public static void main(String[] args){
+		프로그램 기술
+	}
+}
+
+//
+/*~*/
+
+System.out.print()
+System.out.println()
+System.out.printf()
+
+자료
+	자료형
+		기본자료형
+			boolean...double
+		객체자료형
+			String
+			배열
+			* 사용자 객체 선언...
+	변수/상수
+	연산자
+	형변환	-(형)변수/상수
+제어
+	조건에 의한 분기
+	조건에 의한 반복
+	continue
+	break;
+절차적 프로그래밍		-위 -> 아래
+구조적 프로그래밍		-함수화 중식으로 프로그램
+
+객체 지향적 프로그래밍(OOP- Object Oriented Programming)
+	기존 자료형의 한계 => 객체
+자동차 회사 => 차량
+
+설계의 단계			프로그램 단계
+(사물)
+아반떼										객체변수-아반떼
+소나타	(공통)	- 자동차(차량)	클래스(class)	구체화		객체변수		객체변수-소나타
+그랜저										객체변수-그랜저
+
+*설계 - 객체 모델링
+	UML(Unified Modeling Language)
+		-다이어 그램
+
+자동차(차량)
+멤버 변수
+메서드
+
+학생
+
+이름/학번/키/몸무게
+홍길동/1001/180.5/70
+박문수/1002/170/60
+
+class Student{
+	String name;
+	String hakbun;
+	double height;
+	double weight;
+}
+
+
+
+
+
