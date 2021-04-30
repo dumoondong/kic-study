@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            const test = () =>{
+                let start = parseInt(document.frm.start.value);
+                let end = parseInt(document.frm.end.value);
+                let result = '<table border = "1">';
+                for(let i=start;i<=end; i++){
+                    result +='<tr>';
+                    for(let j=1; j<=9; j++){        
+                        result += '<td>' + i +'X' +j+ '=' +(i*j)+'</td>';
+                    }
+                    result +='</tr>';
+                }
+                result += '</table>';
+                let div = document.getElementById( 'div' );
+                div.innerHTML = result;
+            };
+        </script>
+    </head>
+    <body>  
+        <form name="frm">
+            시작 단 : <input type="text" name="start" />
+            끝 단 : <input type="text" name="end" />
+            <input type="button" value="출력" onclick="test()"/>
+        </form>
+        <div id="div"></div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+Class
+	사용자 정의 class - 문법 공부
+
+	class를 정의하는 방법
+		접근제한자
+		final
+		멤버필드
+			인스턴스
+			클래스
+			접근제한자
+			final
+		*초기화 블럭
+		메서드
+			인스턴스
+			클래스
+			접근제한자
+			final
+		
+			오버로딩(조건)
+			가변인자
+
+			public static void main(String[] args)
+			Constructor(조건)
+	객체 중심 이론
+		캡슐화 - 데이터 숨김
+				1.접근 제한자(멤버필드 : private / 메서드: public)
+				2.getter/setter : 이름
+		상속화
+			is a(상속) / has - a(변수)
+			extends 클래스		:단일 상속/
+			오버라이드(재정의)
+			super,super()
+			 
+			추상화
+			다형화
+
+	내장 class
+	외부 class
+
+패키지	<-> 임포트
+	클래스(소스 X) 나누어 보관하는 방법
+	패키지a
+		*.class
+	패키지b
+		*.class
+
+패키지
+	package 패키지명
+	패키지명 이름 - 도메인(인터넷 주소)
+			www.naver.com => com.naver.www
+			*packa
+
+임포트
+	import 패키지명.클래스명
+./text.txt - ./경로
+.text.txt	.text
+
+javac -d. -encoding utf-8 *.java
+-d.
+	-d : directory
+	. : 현재위치
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
