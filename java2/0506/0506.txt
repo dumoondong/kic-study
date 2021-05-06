@@ -1,0 +1,59 @@
+java.util
+	날짜	-Date/Calendar	=>달력
+		문자열
+		날짜
+	난수	-Random
+	입력	-Scanner
+		public static void main(String[] args)	-아규먼트		프로그램 옵션
+		Scanner sc = new Scanner(System.in);
+		sc.nextLine();			-프롬포트		입력
+
+		CUI	-Character User Interface	(명령 프롬포트)
+		GUI	-Graphic User Interface	(Window)
+
+	*객체의 형변환
+		자동형변환	자식->부모(*모든 클래스는 Object형변환 가능)
+		강제형변환	(자식 -> 부모) -> 자식 	(부모->자식 : 실행시 에러)
+	
+		*배열
+	*Collection Framework
+데이터(엑셀) - 행과 열 - 2차원
+
+번호	이름	전화번호		나이	주소
+1	홍길동	010-1111-1111	20	서울시	Person p1
+2	박문수	010-1111-2222	30	경기도	Person p2
+3	이몽룡	010-1111-3333	40	인천시	Person p3
+
+=> 프로그램적으로 처리
+
+1.2차원 배열
+2.ArrayList를 두 개
+3.ArrayList(배열/Hashset/HashMap) + class
+
+객체중심 프로그래밍(OOP)
+캡슐화
+상속화
+	추상화
+	다형화
+*abstraction -추출(공통된 내용을 뽑아내는 것)
+	*부모클래스를 만드는 방법
+	*특별한 용어를 써서 상속을 강제시키는 기법
+
+	abstract class		-추상클래스		-상속을 해야지 상속가능
+	abstract 메서드정의	-추상메서드		-오버라이딩을 해야지 사용가능
+
+추상클래스
+	추상 메서드
+	일반 메서드
+더 추상화
+
+인터페이스
+	상수
+	추상메서드
+
+class명 extends class명	-단일상속
+
+*편법적 다중상속
+class명 implements 인터페이스명
+
+class명 extends class명 implement 인터페이스명
