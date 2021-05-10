@@ -1,0 +1,62 @@
+자바에 대한 기본문법 - 동영상 / 다른 책
+*많이 ....
+
+문법
+	자료형
+		기본자료형
+		객체자료형
+			사용자정의 객체
+			APIs - document
+				내장 객체
+				외부 객체
+
+			*OOP 개론 - 여러개 클래스
+				캡슐화
+							-접근지정자
+							-setter/getter
+							-this/this()
+				상속화			-extends
+							-super/super()
+					추상화		-abstract
+							-override
+							-interface/ implements
+					다형화		-객체 형변환
+							-override
+	제어문 - 알고리즘(잔머리)
+	패키지명
+		java.lang
+			Object
+			String(*)
+			Math
+		java.util
+		java.text
+			Date/Calendar
+			Collection Framework(*)
+		java.text		
+			...
+		java.io
+			*exception
+			File(파일, 디렉토리에 대한속성)
+	파일내용....
+	binary(그림,음악,영상)/ 영문/ 특수문자/ 숫자 		-1byte					InputStream / OutStream
+	영문/특수문자/숫자/다국어(*)-유니코드			-2byte / char				Reader/Writer
+
+	추상클래스			목적지(노드)
+	InputStream / OutputStream		FileInputStream/FileOutputStream
+	Reader/Writer			FileReader / FileWriter
+
+데이터		- InputStream/OutputStream/Reader/Writer	1차 스트림
+		- 2차스트림				2차(보조) 스트림(1차 스트림 보강)
+
+1.속도 Buffer
+	BufferedInputStream
+	BufferedOutputStream
+	BufferedReader
+	BufferedWriter
+2.변환
+	InputStreamReader
+	OutputStreamWriter
+Scanner scan = new Scanner(System.in)
+System.in = 표준 입력 InputStream
+
+
