@@ -1,0 +1,39 @@
+데이터
+	임시데이터
+		변수/상수
+	영구데이터
+		로컬
+			파일
+		원격
+
+java.io
+	대상(파일/문자열/... : node) - input / output
+
+	*file - File
+		java.io =java.nio
+
+	1.저장단위
+		1byte(byte)		-InputStream/OutputStream
+		2byte(char)		-Reader/Writer(다국어)
+	2.node
+		FileXXX
+	3.
+		1차 스트림	- node
+		2차 스트림	- 1차 스트림
+			1.Buffered
+			2.InputStreamReader/OutputStreamWriter
+			3.DataInputStream/DataOutputStream
+*java
+내장 라이브러리에서 제공(x)
+=> 외부에서 추가...외부라이브러리(thid party)
+1. office
+	excel
+	word
+	powerpoint
+2.pdf
+
+excel
+	Apache - poi
+	http://poi.apache.org/
+	JSL
+	http://jexcelapi.sourceforge.net/
