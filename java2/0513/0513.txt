@@ -1,0 +1,31 @@
+GUI	- Graphic User Interface
+		*Java2D
+			*모든 것을 클래스 : Color/Font/Shape
+	-Window 기반의 모든 프로그램
+		입력	-GUI + event
+		출력 	-GUI
+	-이벤트처리 중심
+
+	Library	=>Android
+		Oracle
+			AWT
+			Swing(Awt 기반의 Swing)
+				Demo
+			JavaFx
+		IBM
+			SWT
+	Eclipse - WindowBuilder
+
+Swing
+	컨테이너		-다른 컨테이너나 위젯을 포함하는 디자인
+		Window
+			JFrame	- 기본
+			JDialog	- 자식창
+			JPanel	-위젯을 집합(그룹화)
+				Pane
+		* Layout
+			AbsoluteLayout(NullLayout) - 좌표배치
+	컴포넌트(위젯)	-사용자 UI
+	*이벤트
+		*코딩
+
