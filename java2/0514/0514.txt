@@ -1,0 +1,29 @@
+Swing - JAVA GUI API
+
+1. 순서
+
+Window Builder(디자인)
+	컨테이너 선택(JFRAME/JDialog)
+		*설정
+	레이아웃 매니저(ABsoulteLayout)
+	컴포넌트(컨테이너 선택)
+		*설정(객체변수명...)
+	이벤트 설정
+Window Builder(소스)
+	이벤트 코딩:Event-Driven Programming
+
+JFrame
+JLabel			-출력
+JButton			-이벤트
+JTextField/PasswordField	-입력
+JTextArea			-출력/입력
+JCheckbox/JRadioButton	-입력
+JOptionPane
+메서드...
+
+데이터가 있는 위젯(컴포넌트)
+MVC	-클래스를 분업화
+
+	Model		-데이터
+	View		-디자인
+		Control		-제어
