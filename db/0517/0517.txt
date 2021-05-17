@@ -1,0 +1,136 @@
+데이터베이스
+
+JSP 활용한 스프링프레임워크를 사용한 웹사이트 제작
+
+JSP	-java		-프로그램
+		-프레임워크
+			-Spring(전자정부프레임워크)
+	-html/css/js	-출력물
+
+데이터
+임시저장
+	*변수/상수(자료구조:ArrayList...)
+영구저장
+	로컬
+		파일
+			test	InputStream/ OutputStream / Reader /Writer
+			특수	별도 라이브러리(excel)
+	원격
+		데이터베이스(datab + base) <= 파일
+
+데이터베이스(기존)
+	=> 빅데이터 => AI(*)
+1.System Administrator (SA)
+	-설치
+2.Database Administrator(DBA)
+	-데이터관리자
+	-시스템의 대항 유지보수
+	-운`영,보안,튜닝
+3.프로그램(*)
+	-데이터에 대한 유지보수
+	-SQL
+
+사원정보에 대한 간단 데이터베이스
+
+sample 데이터베이스
+
+dept	- 부서정보
+	deptno	- 부서번호
+	dname	- 부서이름
+	loc	- 부서위치
+emp	- 사원정보
+	empno	- 사원번호
+	ename	- 사원이름
+	job	- 직책
+	mgr	- 관리자 사원번호
+	hiredate	- 입사일자
+	sal	- 급여(월급)
+	comm	- 수당
+	deptno	- 부서번호
+salgrade	- 호봉정보
+	grade	- 호봉
+	losal	- 급여하한
+	hisal	- 급여상한
+
+
+*
+MariaDB client 명령어:;
+
+SQL 명령어:
+	;
+	대소문자 안가림
+	예약어 못씀
+
+show databases;
+use 데이터베이스명;
+show tables;
+describe 테이블명;
+desc 테이블명;
+
+*CRUD
+	DML(Data Manipulation Lang.)
+		-데이터조작
+		select
+		insert
+		update
+		delete
+	DDL(Data Definition Lang.)
+		-데이터 저장구조 조작
+		create
+		alter
+		drop
+	DCL(Data Control Lang.)
+		-데이터 접근 권한 -보안
+		grant
+		revoke
+	TCL
+
+	select 	*
+		컬럼명,....
+	from 	테이블명;
+데이터베이스 접속
+	Database Server	- 서비스로써 동작
+
+	=> SQL(Structures Query Lang.)	
+
+	Database Client
+		공식 클라이언트
+			명령프로포트
+			HeidiSQL
+		Thid Party 클라이언트
+		직접 제작도 가능
+
+SQL
+
+DML
+	select - delete
+DDL
+	create - drop
+DCL
+	grand, revoke
+...
+
+select 컬럼(*)		-컬럼절,select 절
+from 테이블		-from 절
+
+1.alias
+2.산술연산자
+3.null
+
+select
+from
+where 행제한 조건
+
+비교연산자	:<> <= >= = !=
+논리연산자	:and,or,not
+=> 참 ....
+
+like	-%(0글자 이상 ....)
+		a%
+		%a
+		%a%
+	- _(한글자)
+	a_
+
+
+
