@@ -1,0 +1,203 @@
+SQL
+	클라이언트 -> 질의(query) -> 데이터베이스 서버
+
+	*개발자
+	*관리자(<= 개발/경력)
+
+데이터베이스 종류
+	대형
+		ORACLE(Oracle / JABA) /DB2(IBM)...
+	중형
+		MySQL(MariaDB)
+	소형
+		SQLite(파일 대치) /Access
+
+	java+Oracle(MySQL)
+
+SQL 문의 종류
+DML
+	select
+	insert
+	update
+	delete
+DDL
+	create
+	alter
+	drop
+	rename
+	truncate
+DCL
+	grant
+	revoke
+
+TCL
+
+*새롭게 기존 구축되어진 데이터베이스
+1.show databases
+2.show tables
+3.desc 테이블이름;
+4.select*from 테이블명;
+	select * from 테이블명 limit 5;
+select 컬럼
+from 테이블명
+where 조건
+	비교연산자/ 논리연산자
+	in
+	between and
+	is null
+order by 정렬
+limit 추출
+
+ERD(Entity-Relationship Diagram)
+	*버전
+	논리적 ERD	-한글로설명(테이블명,컬럼명)
+	물리적 ERD	-각 데이터베이스에 맞게끔 변경(영문)
+*데이터베이스에 내용	
+*테이블의 내용
+	구조/데이터
+
+*함수
+	시스템 정보
+	숫자
+	문자열		(*)
+	날짜		(*)
+			select now();
+			select now(), date_add(now(), interval 2 day);
+mysql -u root -p
+
+select * from emp limit 3;
+desc emp;
+
+select greatest(100,101,102);
+select if(1-2 , '참', '거짓';
+
+select ename, sal, if(sal<2000,'적음','많음') from emp where deptno= 30;
+
+select ifnull(numm, '참');
+
+select empno, ename, sal,job,
+    -> case job
+    -> when 'analyst' then sal *1.1
+    -> when 'clerk' then sal*1.2
+    -> when 'manager' then sal *1.3
+    -> when 'president' then sal *1.4
+    -> else sal
+    -> end
+    -> from emp;
+
+ select avg(comm), sum(comm)/count(comm), sum(comm)/14 from emp;
+
+서버쿼리
+단일행	-리턴.. 1행 1열
+	-비교연산자(=,!=,> < >= <=)
+복수행	- 리턴 -- 여러행 1열
+	- in any all
+
+	in 목록
+
+	< any
+	> any
+
+	<all
+	>all
+
+select ename, sal from emp where sal in ( select max(sal) from emp group by deptno );
+
+
+ select empno,ename, sal from emp where sal < all ( select sal from emp where job='manager' );
+
+테이블을 병합 - join
+
+* 중심 - 공통적인 컬럼(내용)
+	카테시안 프로덱트(곱)
+동등 조건 - equijoin
+
+select * from emp inner join dept where emp. deptno = dept.deptno;
+
+select *from emp inner join dept using(deptno);
+
+select * from emp e join dept d on(e.deptno = d.deptno);
+
+select empno,ename,dname,loc from emp e join dept d on(e.deptno = d.deptno) where e.deptno = 10;
+
+select *  from emp e inner join salgrade s on (e.sal >= s.losal and e.sal <= s.hisal);
+select * from emp e inner join salgrade s on(e.sal between s.losal and s.hisal);
+
+ select empno, ename, dname, loc,sal,grade from emp e inner join dept d on e.deptno = d.deptno
+inner join salgrade s on e.sal between s.losal and s.hisal;
+
+
+select empno, ename, dname, loc, sal, grade from emp e inner join dept d inner join salgrade s 
+on (e.deptno = d.deptno and e.sal between s.losal and s.hisal);
+
+ select e.ename, m.ename from emp e inner join emp m on (e.mgr = m.empno);
+select e.ename '사원명', m.ename '관리자명' from emp e inner join emp m on(e.mgr = m.empno);
+
+ select e.empno '사원번호', e.ename '사원명', ifnull(m.ename, '관리자없음') '관리자명' 
+from emp e left outer join emp m on(e.mgr = m.empno);
+
+1.데이터베이스(폴더)
+	create database 데이터베이스 명;
+	drop database 데이터베이스 명;
+2.테이블
+	https://mariadb.com/kb/en/data-types/
+	문자열
+		char(크기)		고정길이
+		varchar			가변길이
+
+		tinytext < text <mediumtext < longtext
+	숫자
+		int(크기)			정수
+		decimal(크기,크기)		실수
+
+	날짜
+		date
+		time
+	*이진(x)
+
+create database if not exists test1;
+create database if not exists test2;
+ show databases;
+drop database test1;
+drop database if exists test3;
+select database();
+
+create table 테이블이름(
+	컬럼이름		데이터타입(크기) 옵션,
+	컬럼이름		데이터타입(크기) 옵션,
+	컬럼이름		데이터타입(크기) 옵션,
+);
+
+source c:/MariaDB/ex04.sql
+
+create table dept2 as select * from dept;
+ select * from dept2;
+create table dept3 as select dname, loc from dept;
+desc dept3;
+ select * from dept3;
+
+create table emp_year as select empno, ename, sal*12+ifnull(comm,0),hiredate from emp;
+desc emp_year;
+
+create table emp_year2
+   as select empno, ename, sal*12+ifnull(comm,0)annsal, hiredate from emp;
+select empno, annsal from emp_year2;
+
+alter table emp_year2 add job varchar(10);
+
+ alter table emp_year2 rename column job to work;
+
+ alter table emp_year2 drop work;
+
+rename table emp_year2 to year_emp;
+
+alter table year_emp rename year_emp;
+
+drop table dept2;
+
+drop table if exists dept3;
+
+create table dept as select * from sample.dept;
+select *from dept;
+
+show create table dept;
