@@ -1,0 +1,176 @@
+SQL
+select
+	1.단일 테이블
+		-subject
+			중첩 쿼리
+			단일행 서브쿼리	(1열 1행)		비교연산자
+			복수행 서브쿼리	(1열 여러행)	in(<,>) and(<,>) all(graph)
+		-함수(내장 함수)
+			단일행 함수	(1:1)
+				....
+				문자열
+				시간
+				..
+			그룹 함수		(다:1)		group by / having
+				sum ... max, min
+	2.다중 테이블
+		- join
+			카테시안 프로덕트(크로스 조인)
+			inner join
+				equi-join		=
+				nonequi-join	부등호
+			outer join		left/right/full
+			self join			한 개의 테이블 안에서
+* 외부 스크립트(메모장 ...code)...Heide ...
+
+DDL
+	create
+		database			-데이터베이스
+		table			-테이블
+
+	데이터베이스
+		create database (if not exists)데이터베이스명;
+		drop database (if exists)데이터베이스명;
+		
+		use databases;
+		use 데이터베이스명;
+
+	테이블
+		*30자 까지 가능 - 내용을 추측 가능한 이름..
+		*자료형
+		create table 테이블명 (
+		컬럼에 대한 정의
+		컬럼명		자료형(크기) 옵션,
+		컬럼명		자료형(크기) 옵션,
+		컬럼명		자료형(크기) 옵션
+		)
+		
+		수정
+			컬럼
+				alter table 테이블명 add 컬럼명 자료형(크기) 옵션
+				alter table 테이블명 modify 컬럼명 자료형
+				alter table 테이블명 drop 컬럼명 자료형
+				*이름 변경
+		삭제
+			drop table 테이블명
+
+		show tables
+		desc 테이블명
+
+*ERD
+	논리적 ERD - 개념적 ERD		-설계
+	물리적 ERD			-데이터베이스에 최적화
+
+	https://ko.exerd.com/#intro
+*Heidi/....
+	www.mysql.com
+
+
+create table dept2 as select * from dept where 1 != 1;
+desc dept2;
+ select * from dept2;
+
+
+
+
+insert into 테이블명 values(값.....)
+	*순서대로 기술
+	*숫자형		값
+	*문자열(날짜)	'값'
+
+insert into dept2 values (10, '기획', '서울');
+
+insert into 테이블명 (컬렴명,) values(값 .....)
+	*컬럼명과 값의 갯수가 동일
+insert into dept2 (deptno,dname,loc) values (30, '연구부', '부산');
+
+insert into dept2 values(81,'생산부',null),(82,'생산부',null);
+
+ create table dept3 as select * from dept where 1 != 1;
+ insert into dept3 select * from dept;
+select * from dept3;
+
+update 테이블명 set 컬럼명 = 값,컬럼명=값,컬렴명=값		전체 데이터에 영향
+update 테이블명 set 커럼명=값 ...where 컬럼명 연산자 값		특정행에 영향
+
+delete from 테이블명					전체데이터 삭제
+delete from 테이블명 where 컬럼명 연산자 값			특정행 삭제
+
+필수 입력		not null
+
+*not null
+*unique
+
+*primary key
+		*not null + unique
+		*테이블당 1개
+		* 일련번호
+
+primary key + 자동 증가(auto increament)
+	*정수 자료형
+		unsigned int
+
+ select * from information_schema.table_constraints where constraint_schema='sample';
+
+*foreing key(외래키, 참조키)
+	pk 참조설정
+
+
+create table dept_p2(
+    -> deptno int(2) primary key,
+    -> dname varchar(14),
+    -> loc varchar(13)
+    -> );
+
+ create table emp_f(
+    -> empno int(4),
+    -> ename varchar(10),
+    -> job varchar(9),
+    -> deptno int(2),
+    -> constraint foreign key (deptno) references dept_p2 (deptno)
+    -> );
+
+ insert into dept_p2 values(20,'연구부','서울');
+update emp_f set deptno=20 where deptno=10;
+
+ alter table dept_p add constraint primary key (deptno);
+alter table dept_p drop primary key;
+
+alter table emp_f add constraint foreign key (deptno) references dept_p (deptno);
+
+
+*view - 가상의 select 문
+	*table ....
+creative view emp_vu1 as select * from emp;
+
+desc emp_vu1;
+
+show full tables;
+
+
+create view emp_vu_10
+    -> as
+    -> select empno, ename,mgr,job
+    -> from emp
+    -> where deptno=10;
+
+ desc emp_vu_10;
+select * from emp_vu_10;
+
+select empno,ename,sal,sal*12 + ifnull(comm,0) annsal,grade
+    -> from emp e inner join salgrade s
+    -> on e.sal between s.losal and s.hisal;
+
+create view emp_mgr
+    -> as
+    -> select e.empno,e.ename,ifnull(m.ename,'없음')
+    -> from emp e left outer join emp m
+    -> on(e.mgr = m.empno);
+
+ create view emp_mgr2
+    -> as
+    -> select e.empno,e.ename,ifnull(m.ename,'없음') mgrname
+    -> from emp e left outer join emp m
+    -> on(e.mgr = m.empno);
+
+from 절 subquery 부터 인라인뷰

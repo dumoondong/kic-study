@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `e`.`empno` AS `empno`,`e`.`ename` AS `ename`,`e`.`sal` AS `sal`,`e`.`sal` * 12 + ifnull(`e`.`comm`,0) AS `annsal`,`s`.`grade` AS `grade` from (`sample`.`emp` `e` join `sample`.`salgrade` `s` on(`e`.`sal` between `s`.`losal` and `s`.`hisal`))
+md5=5e98cf1bcc100b8f1c257b14d86944c8
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2021-05-20 07:38:47
+create-version=2
+source=select empno,ename,sal,sal*12 + ifnull(comm,0) annsal,grade\nfrom emp e inner join salgrade s\non e.sal between s.losal and s.hisal
+client_cs_name=euckr
+connection_cl_name=euckr_korean_ci
+view_body_utf8=select `e`.`empno` AS `empno`,`e`.`ename` AS `ename`,`e`.`sal` AS `sal`,`e`.`sal` * 12 + ifnull(`e`.`comm`,0) AS `annsal`,`s`.`grade` AS `grade` from (`sample`.`emp` `e` join `sample`.`salgrade` `s` on(`e`.`sal` between `s`.`losal` and `s`.`hisal`))
+mariadb-version=100510

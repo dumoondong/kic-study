@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `sample`.`emp`.`empno` AS `empno`,`sample`.`emp`.`ename` AS `ename`,`sample`.`emp`.`sal` AS `sal` from `sample`.`emp`
+md5=2e634a1958440c69ed0f4be1b7e3bec8
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2021-05-20 08:15:40
+create-version=2
+source=select empno, ename, sal\nfrom emp
+client_cs_name=euckr
+connection_cl_name=euckr_korean_ci
+view_body_utf8=select `sample`.`emp`.`empno` AS `empno`,`sample`.`emp`.`ename` AS `ename`,`sample`.`emp`.`sal` AS `sal` from `sample`.`emp`
+mariadb-version=100510

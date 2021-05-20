@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `sample`.`emp`.`empno` AS `empno`,`sample`.`emp`.`ename` AS `ename`,`sample`.`emp`.`job` AS `job`,`sample`.`emp`.`mgr` AS `mgr`,`sample`.`emp`.`hiredate` AS `hiredate`,`sample`.`emp`.`sal` AS `sal`,`sample`.`emp`.`comm` AS `comm`,`sample`.`emp`.`deptno` AS `deptno` from `sample`.`emp`
+md5=8e70a1c701eece55bb426b5e37be7f51
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2021-05-20 07:15:45
+create-version=2
+source=select * from emp
+client_cs_name=euckr
+connection_cl_name=euckr_korean_ci
+view_body_utf8=select `sample`.`emp`.`empno` AS `empno`,`sample`.`emp`.`ename` AS `ename`,`sample`.`emp`.`job` AS `job`,`sample`.`emp`.`mgr` AS `mgr`,`sample`.`emp`.`hiredate` AS `hiredate`,`sample`.`emp`.`sal` AS `sal`,`sample`.`emp`.`comm` AS `comm`,`sample`.`emp`.`deptno` AS `deptno` from `sample`.`emp`
+mariadb-version=100510
