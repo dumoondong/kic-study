@@ -1,0 +1,59 @@
+SQL
+	-데이터베이스 서버에 명령을 하는 방법(언어)
+	-개발자
+		DML
+			select	(*)	*ERD
+			insert
+			update
+			delete
+		DDL	데이터베이스 객체(데이터베이스, 테이블, 뷰)
+			create
+			alter
+			drop
+				테이블 - 생성(+ 제약조건:DML)
+			제약조건의 종류
+				*설정 확인
+				not null
+				unique
+				primary key
+				foreign key
+				*check(X)
+			뷰
+	DCL
+	TCL
+
+*index - 색인
+		검색을 빠르게 하기위해서 목차 정리
+1.emp->emp2
+2.emp2 insert, select tester1
+3.select..insert
+
+
+create table dept_i(
+    -> deptno int(2),
+    -> dname varchar(14),
+    -> loc varchar(13)
+    -> );
+
+show index from dept_i;
+
+alter table dept_i add constraint primary key (deptno);
+
+alter table dept_i drop primary key;
+
+create index dept_i_idx on dept_i (dname);
+
+show index from dept_i;
+
+drop index dept_i_idx on dept_i;
+
+alter table dept_i add index dept_i_idx (dname);
+
+ alter table dept_i drop index dept_i_idx;
+
+ERD		-> 테이블생성		엔지니어링
+생성된 테이블 	->ERD			리버스 엔지니어링
+
+mysql -u root -p sample < sample.sql
+mysql -u root -p sample
+ show tables;
