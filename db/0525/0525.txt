@@ -1,0 +1,16 @@
+query
+	Statement		완성된		값포함
+		- 디버깅
+	PreparedStatement		미완성된		값미포함
+		- 속도
+
+select distinct sido from zipcode;
+select distinct gugun from zipcode where sido = '서울';
+select distinct dong from zipcode where sido='서울' and gugun='강남구';
+select * from zipcode where sido='서울' and gugun='강남구' and dong='일원동';
+
+DAO 패턴
+DAO - Data Access Object(Method에서 CRUD 처리)
+TO(Transfer Object),VO(Value Object) - 데이터저장
+
+서비스 -> TO -> DAO -> DB
