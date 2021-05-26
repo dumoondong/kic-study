@@ -1,0 +1,14 @@
+패턴 - 클래스 역할 분화(분업) 작업
+	dao 패턴 - 메서드 정의
+		dao,to
+
+* 프로젝트 생성시
+	라이브러리 추가 - jdbc, excel...
+	소스관리(build tool)
+		* 자동 jar
+		* 외부 라이브러리 자동 추가
+	ant, maven(*: eclipse), gradle(->intellij)
+
+Java Project
+	* Project (수동 라이브러리 추가)
+	*Build Tool 사용하는 프로젝트 생성 ...(자동 라이브러리 추가)
