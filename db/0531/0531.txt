@@ -1,0 +1,52 @@
+자바
+->
+미니프로젝트(Java Test)
+	swing
+	jdbc
+	* network
+
+	1.기획서
+		UML
+		ERD
+		스토리보드(화면 UI)
+	2.프로그램
+
+->
+(html,css,js)
+->
+JSP
+
+자바
+-문법
+	자료
+		기본자료형
+		객체자료형 -> class
+	제어
+	*객체자료형 -> class
+		OOP
+		캡슐화,상속화,추상화,다형화
+-APIs
+	내장 객체
+		패키지별과 분류해서 정리
+	외부 객체
+		라이브러리 별로 분류해서 정리
+		*excel
+네트워크
+	1.원격에 있는 웹서어봐 연결 - 크롤링(스크래핑)
+		브라우저 역할을 이용
+	2.원격에 프로그램 간의 연결 - 소켓
+		채팅
+
+		html	-web page
+
+		csv	-comma seperate value
+		xml	-markup
+		json	-Javascript Object Notation
+
+html parsing library
+	josoup
+	https://jsoup.org/
+프로그램		->url->		webserver		->html(csv,xml,json),image
+		<-html<-
+1.string(무조건
+2.library
