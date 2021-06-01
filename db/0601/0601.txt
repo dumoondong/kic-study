@@ -1,0 +1,61 @@
+네트워크
+	1.소켓 클라이언트
+		=>크롤링(스크래핑)
+		*webserver
+
+		*html - 누적
+		*데이터 형태 -OpenAPIs
+			csv
+			xml
+			json
+1.csv
+	일반텍스트 파일
+	구분 , ....
+2.xml
+	서두
+	태그(엘리먼트)
+*.json /*.txt
+순수 객체
+{
+	"data1":"value1"
+	"data2":"value2"
+}
+배열 객체
+[
+]
+
+[
+	{
+		"name":"모던 웹 디자인을 위한 HTML5 + CSS3 입문",
+		"publisher":"미디어",
+		"author":"홍길동",
+		"price":"30000"원"
+	},
+	{
+		"name":"모던 웹을 위한 JavaScript + JQuery 입문",
+		"publisher":"미디어",
+		"author":"박문수",
+		"price":"32000"원"
+	},
+	{
+		"name":"모던 웹을 위한 Node.js 프로그래밍",
+		"publisher":"미디어",
+		"author":"이몽룡",
+		"price":"22000"원"
+	},
+	{
+		"name":"모던 웹을 위한 HTML5 프로그래밍",
+		"publisher":"미디어",
+		"author":"방자",
+		"price":"30000"원"
+	},
+]
+
+java
+	TCP(*)
+		Socket
+		ServerSocket
+	UDP
+		DatagramSocket
+		DatagramPacket
+		MulticastSocket
