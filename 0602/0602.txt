@@ -1,0 +1,15 @@
+네트워크
+1.URLConnection을 이용한 웹서버의 접속
+2.socket 통신
+	java.net
+		ServerSocket
+		Socket
+	java.io
+		다국어
+			BufferedReader
+			BufferedWriter
+		파일
+			BufferedInputStream
+			BufferedOutputStream
+	TCP(Transmittion Control Protocol)	-전화
+	UDP(Uni Datagram Protocol)		-방송
