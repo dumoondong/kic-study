@@ -1,0 +1,30 @@
+create database project;
+use project;
+
+CREATE TABLE customor(
+	id VARCHAR(20),
+	PASSWORD VARCHAR(20),
+	NAME VARCHAR(20),
+	phone VARCHAR(11),
+	RANK VARCHAR(5),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE main(
+	main VARCHAR(20),
+	mainprice VARCHAR(20)
+);
+CREATE TABLE side(
+	side VARCHAR(20),
+	sideprice VARCHAR(20),
+	PRIMARY KEY(side)
+);
+
+INSERT INTO main(main,mainprice) VALUES('testmenu1','30000');
+INSERT INTO main(main,mainprice) VALUES('testmenu2','50000');
+INSERT INTO main(main,mainprice) VALUES('testmenu3','70000');
+INSERT INTO side(side,sideprice) VALUES('testmenu2','5000');
+INSERT INTO side(side,sideprice) VALUES('testmenu1','3000');
+
+INSERT INTO customor(id,PASSWORD,NAME,phone,rank) VALUES('test','1234','test','test','손님');
+INSERT INTO customor(id,PASSWORD,NAME,phone,rank) VALUES('root','1234','관리자','01000000000','관리자');
