@@ -1,0 +1,49 @@
+프로그램의 카테고리
+window programming	-MS
+	-System(windows, macOS, Linux)에 설치 후 실행되는 프로그램
+			CUI/GUI
+web programming
+	-Browser를 통해서 실행되는 프로그램
+	-게시판,회원가입 .... 쇼핑몰
+app programming	-Apple/구글
+	-스마트폰을 통해서 실행되는 프로그램
+	-window programming + web programming
+
+Program 언어별 웹 기술
+
+Program 언어		웹서버		웹기술
+C			Apache...		CGI
+C			"		PHP - 새로운 언어
+Java			Apache-Tomcat	Servlet/JSP
+C#			IIS		APS.net
+Python			X		Python(flask, django ...)
+Javascript			X		node.js
+
+*웹 프로그래밍
+개발환경
+	이클립스	+	톰캣
+=>배포(deployment)
+운영(서비스)
+	톰캣
+
+directive
+	<%@ page
+		페이지에 대한 전체적인 선언
+	<%@ taglib
+	<%@ include
+declaration
+	<%!
+		메서드에 대한 선언
+		멤버 필드에 대한 선언
+scriptlet
+	<%
+		자바소스
+expression
+	<%=
+		출력
+개발 환경 ...
+	C:\JSP\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+	\work\Catalina\localhost\day_040\org\apache\jsp
+운영 환경
+	C:\JSP\apache-tomcat-9.0.46
+	\work\Catalina\localhost\ROOT\org\apache\jsp
