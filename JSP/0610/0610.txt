@@ -1,0 +1,23 @@
+기본 객체
+	1. 인스턴스화가 이미 되어있는 클래스
+		-객체변수명
+	
+	request		javax.servlet.http.HttpServeletRequest
+	response		javax.servlet.http.HttpServeletRespone
+	session		..
+	application
+	out
+	
+	pageContext
+	config
+	page
+	exception
+
+http://localhost:8080/day_041/form_ok.jsp	-처리될 페이지
+?
+data1=12&data2=23&data3=34		-데이터
+data1=12					-키 = 값
+&
+data2=23
+&
+data3=34		
