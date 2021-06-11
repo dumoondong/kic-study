@@ -1,0 +1,20 @@
+자바의 웹기술 - Servelt/JSP
+	-Servlet : class 이용해서 웹서비스
+	-JSP     : Java Server Page			<= ASP
+		html 파일을 이용해서 웹서비스
+
+JSP
+	디렉티브
+	선언
+	스크립틀릿		*
+	표현식
+기본객체
+	request			*
+		header
+		parameter
+	response
+		header
+		sendRedirect -> JS
+	out
+	session
+	application
