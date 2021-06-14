@@ -1,0 +1,32 @@
+대표적인 웹 CRUD
+	- (시작) 게시판 -> (끝) 게시판
+	* 모든 - 목록,쓰기,수정,삭제
+
+	*복잡
+		1.html/css/js
+		2.Java
+		3.데이터베이스
+
+웹(GUI - swing)
+1.디자인(html/css/js)분석
+	2. 테이블 구조
+	3. 페이지 네비게이션 구조 (web 1.0)
+
+create table emot_board1 (
+seq int not null primary key auto_increment,
+subject varchar(150) not null,
+writer varchar(12) not null,
+mail varchar(50),	
+password	 varchar(12) not null,
+content varchar(2000),
+emot char(2) not null,	
+hit int not null,
+wip varchar(15) not null,
+wdate datetime not null
+);
+
+insert into emot_board1 values(0,'제목','이름','test@test.com','1235','내용','00',0,'000.000.000.000',now())
+
+				<span><a>[ 1 ]</a></span>
+				<span><a href="board_list1.jsp">2</a></span>
+				<span><a href="board_list1.jsp">3</a></span>
