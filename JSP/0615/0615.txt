@@ -1,0 +1,18 @@
+게시판
+	기능... 무한대...
+		페이징...
+	
+	패턴..
+		jsp - hard coding(날코딩)
+		model1
+		mvc model2
+			=> framework
+
+cpage		blockPerPage	startBlock	endBlock
+1		5		1		5
+2		5		1
+3		5		1
+4		5		1
+5		5		1
+6		5		6		10
+7		5		6
