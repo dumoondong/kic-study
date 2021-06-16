@@ -1,0 +1,20 @@
+request
+response
+out
+session
+application
+----------------
+pageContext
+exception
+....
+
+out
+	출력
+		println()
+		//print()
+		//newLine()
+	출력버퍼
+		페이지 디렉티브(설정)
+			buffer
+			autoflush
+		메서드(제어)
