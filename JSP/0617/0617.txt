@@ -1,0 +1,21 @@
+jsp 프로그램의 제작하는 패턴
+
+하드코딩(날코딩)
+	jsp/Servlet 만을 이용
+model1
+	jsp + class(Java beans)
+mvc model2
+	jsp + Servlet + class
+
+Page Navigation
+= DFD
+
+로그인폼(loginForm.jsp)
+	(id,password)
+	-> 로그인확인(loginCheck.jsp)
+		->성공
+			(cookie)
+			->성공페이지(loginComplet.jsp)
+				->로그아웃(logoutCheck.jsp)
+		->실패
+			->로그인 폼
