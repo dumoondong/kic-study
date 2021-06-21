@@ -1,0 +1,57 @@
+Java	- 웹프로그래밍 기술
+		JSP	class 자동생성
+		Servlet	class 수동생성
+
+Servlet 규약
+
+Servlet(i) <- GenericServlet(a.c) <- HttpServlet <- 상속받아서 만든다...
+HttpServlet
+	init		-초기화
+	service		-get/post
+		or
+
+		doGet / doPost
+	destory		-소멸처리
+
+등록
+	1.web.xml
+		클래스와 요청방법
+	2.annotion (*)
+시작하면
+	/servlet01		/servlet01
+	/servlet01/*		/servlet01/모든지
+끝나면
+	*.do			/aa.do
+	*.naver			/aa.naver
+
+하드 코딩
+	1.jsp
+	2.Servlet
+모델1
+모델2
+	사용자 요청을 처리
+	1.parameter 기법
+		board_write1.jsp
+		board_write1_ok.jsp
+		
+		?key=write1	서블릿
+		?key=write1_ok	서블릿
+	2.url 기법
+		write.do		서블릿
+		write1_ok.do	서블릿
+
+1.controller
+	controller?action=view1		view1.jsp
+	controller?action=view2		view2.jsp
+2.새롭게 프로젝트
+	controller?action=from		form.jsp
+	controller?action=form_ok		form_ok.jsp		FormOkModel.java
+									execute
+3.우편번호 검색기
+	controller?action=zipcode		zipcode.jsp
+	controller?action=zipcode_ok	zipcode_ok.jsp		ZipcodeOkModel.java -> DB
+
+
+
+
+
