@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context>
+	<Resource
+		name="jdbc/mariadb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mysql://Localhost:3306/sample"
+		username="root"
+		password="123456"/>
+		<Resource
+		name="jdbc/mariadb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mysql://Localhost:3306/sample"
+		username="root"
+		password="123456"/>
+			<Resource
+		name="jdbc/mariadb2"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mysql://Localhost:3306/sample"
+		username="root"
+		password="123456"/>
+		<Resource
+		name="jdbc/mariadb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mysql://Localhost:3306/sample"
+		username="root"
+		password="123456"/>
+</Context>

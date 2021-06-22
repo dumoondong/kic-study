@@ -1,0 +1,38 @@
+동일 UI
+	코디에 패턴 재정의(대용량 및 분산 구조)
+
+	hard coding
+	model1
+	MVC model2
+	=> Micro Service Architecture(MSA)
+
+Simple 게시판(페이징X ,이모티콘X) => model1 =>model2
+
+1.jdbc
+2.context
+3.java
+4.jsp(image,css)
+
+model1
+	board_write1.jsp		<-> BoardTO <-> BoardDAO	->DB
+	board_write1_ok.jsp
+	...
+	board_delete1_ok.jsp
+
+model2			BoardAction(I)
+	controller	WriteAction	<-> BoardTO <-> BoardDAO	-> DB
+			WriteOkAction
+			ListAction
+			ViewAction
+			..
+			DeleteOkAction
+			...........................
+		
+			board_write1.jsp
+			...
+			board_delete1_ok.jsp
+	url..
+경로명/파일명.do
+경로명/view1.do		view1.jsp
+경로명/view2.do		view2.jsp
+
