@@ -1,0 +1,32 @@
+MVC model2 
+	- 단순 게시판
+	- 자료실 게시판
+		mariadb driver
+		cos.jar
+
+
+create table album_board1 )
+seq int not null primary key auto_increment,
+subject varchar(150) not null,
+writer varchar(12) not null,
+mail varchar(50),	
+password	 varchar(12) not null,
+content varchar(2000),
+filename varchar(200),
+filesize int,
+longitude varchar(12),			//위도 경도
+latitude varchar(12),
+cmt int not null,				//코멘트 개수
+hit int not null,
+wip varchar(15) not null,
+wdate datetime not null
+);
+
+create table album_comment1(
+seq int not null primary key auto_increment,
+pseq int not null,
+writer varchar(12) not null,
+password varchar(12) not null,
+content varchar(2000) not null,
+wdate datetime not null
+);
