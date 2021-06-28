@@ -1,0 +1,21 @@
+이벤트
+서버 시작시			=> Listenr
+클라이언트 접속시
+클라이언트 서비스 요청시
+
+값을 저장할 수 있는 영역
+pageContext	-페이지 단위
+request		-요청 단위
+session		-브라우저 단위
+application	-톰캣 단위
+	getAttribute / setAttribute
+EL(Expression Lang : 표현언어)
+불리언,정수,실수,문자열,널 ...
+
+<%@ page inELIgnored="true"5>
+표현식		<%= 값5>
+표현언어		&{값}
+
+액션 태그의 확장 : JSTL(Java standard Tag Library)
+	jstl.jar
+	standard.jar
