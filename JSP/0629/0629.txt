@@ -1,0 +1,18 @@
+솔루션 -> 상품
+1.EL(Expression Lang)
+	Expression = diplay = print
+	Java(X) = > ${}
+		내부 저장 객체
+			pageContext
+			request
+			session
+			application
+			* param, cookie, header
+2.JSTL(java standard tag library)
+	=> 표현을 위한 새로운 언어
+	=> (ht)ml(<>) 데이터를 표현...
+	core
+	format
+	sql
+	함수
+	xml
