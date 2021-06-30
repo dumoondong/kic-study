@@ -1,0 +1,67 @@
+시스템(OS,Platform)
+	OS - Operating System
+	Platform - 소프트웨어 구동 장치
+OS
+	1.시스템관리자 - 설치유지보수 (SA) / 운영환결설정
+		=>수퍼컴퓨터..
+	2.보안 관리자
+		해킹
+			시스템 해킹
+			네트워크 해킹
+		쉘 프로그래밍(C / C++)
+	3.개발자
+		개발을 위한 환경구성
+		(웹서버, 데이터베이스 서버 설치, 튜닝)
+		기타 프로그래밍
+	UNIX
+		정통 Unix
+			-> Mac OS(BSD)		->ios
+		linux				->Android
+	Window ->
+
+
+root (X)
+master (관리자)
+1.GUI	-X-Window
+		프로그램- 변경가능
+		Gnome
+		KDE
+		enlightment
+2.GUI	- terminal - shell 명령어
+
+date
+cal
+date --help
+clear
+exit
+passwd
+
+Window
+	드라이브 - 폴더 - 파일
+
+Linux(Unix)
+
+/(컴퓨터)
+	-
+	-
+	-
+		추가 하드연결
+		dvc
+
+mkdir - make directory
+cd - change directory
+	cd 절대경로/ 상대경로
+rmdir - remove directory
+
+mv
+	같은 디렉토리에서는 이름바꾸기
+	다른 디렉토리에서는 잘라내기
+바로가기
+	실제파일			<- 바로가기 파일
+	=> 링크
+		하드링크			(X)
+		소프트링크(심볼릭링크)	= 바로가기
+ln
+whereis
+which
+
