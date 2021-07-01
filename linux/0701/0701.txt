@@ -1,0 +1,73 @@
+Linux 사용하는 목적
+	=> 서버용 Platform
+		<= 서버용 프로그램 설치용
+	* Unix에 접근할 수 있는 기호
+
+	=>java programming(=JSP)
+*
+	System 관리자
+	보안 관리자
+	개발자
+		임베디드 애플리케이션 개발자	-장비
+		서버 애플리케이션 개발		-웹 개발자
+
+1.x-window
+2.terminal
+
+root		절대적인
+		사용자 생성/삭제
+			adduser user1
+			ls -l /home/
+			tail -5 /etc/passwd
+			tail -5 /etc/shadow
+			passwd user1
+			cd /home/
+			cp -R user2 user
+			chown -R user2.user2 user
+			userdel user1
+			userdel -r user2
+`			rm -fr user
+	1.root 로그인
+		처음부터 로그인
+		su - root
+	2.권한
+
+	master	각각 홈디렉토리가 존재
+	...
+	..
+	...
+
+groupadd
+groupmod
+groupdel
+who
+w
+id
+whoami
+
+프로그램을 제공하는 방식
+1. 압축파일
+	1.C / C++ 소스	- 컴파일
+	2.프로그램
+2.인스톨 파일(배포판)
+	레드햇 - rpm
+		수동
+		자동
+			yum
+	데비안 - deb
+
+tar - tape archiver
+
+
+tar cvf test.tar test1.txt test2.txt test3.txt
+tar tvf test.tar
+tar xvf test.tar
+tar uvf test.tar test4.txt
+tar tvf test.tar
+
+gzip test.tar
+gzip -d test.tar.gz
+gunzip test.tar.gz
+
+cd eclipse
+./eclipse
