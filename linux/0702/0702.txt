@@ -1,0 +1,57 @@
+사용자 + 권한/허가권
+		- 공간 => 홈 디렉토리(/home/각자의 아이디)
+		-소유권 / 그룹(권한의 집합)
+		adduser (O) / useradd
+		passwd
+			/etc/passwd
+			/etc/shadow
+user1:x:1001:1001::/home/user1:/bin/bash
+user1		로그인 id
+x : 		/etc/shadow
+1001		UID
+1001		GID	(무조건 그룹에 포함)
+		/etc/group
+빈공간		설명
+/home/user1	홈 디렉토리
+/bin/bash		로그인 쉘
+
+su -		재로그인		작업변경
+			환경설정변수
+su		권한만 위임	X
+			사용자환경설정변수
+권한 / 소유자/소유그룹/기타
+chmod 기호/숫자 파일/디렉토리
+chown - root
+
+프로그램 설치
+압축파일
+	1.소스
+	2.프로그램
+	
+	* tar -> gzip(bzip)
+	tar cvf	묶음	=>gzip => 압축
+	tar cvzf	압축	=> tar.gz
+		eclipse
+		apache-tomcat
+인스톨(패키지)파일
+	rpm
+	yum
+
+	*프로그램마다 설정이 다를 수 있음
+
+forground process
+	- 전면부에서 실행되는 프로그램
+	- 애플리케이션 관련 프로그램
+	* UI가 있음
+background process
+	- 후면부에서 실행되는 프로그램
+	- 시스템과 관련 프로그램
+	*UI가 없음
+
+atd(at deamon)
+	deamon
+	*시스템이 자동적으로 리눅스가 시작될 때 실행되는 프로그램
+	*백그라운드 프로세스
+
+at 00:00
+at -l
