@@ -1,0 +1,65 @@
+프로그램의 설치
+
+프로세스 상태
+	ps
+	pstree
+	tree
+	kill
+	top
+*daemon
+	* 백그라운드 프로세스로 사용자 처리 요청을 대기하는 프로세스
+	* ~~d
+
+	* systemctl 옵션 데몬명
+		* start		- 시작
+		* status
+		* enable		- 재부팅 후에도 자동시작
+
+프로그램의 실행 예약
+yum -y install mailx
+yum -y install sendmail
+
+실행
+systemctl start sendmail
+
+	at	-일회성
+		-파일(데이터베이스)로 저장(메일 - 보고서)
+
+
+systemctl list-units --type service
+systemctl list-unit-files --type service | grep enabled
+
+systemctl status atd
+systemctl stop atd
+
+crontab -e
+12,15 * * * * /usr/bin/ls -l ~master > ~master/list.txt
+crontab -l
+
+crontab -u master -r
+crontab -u root -l
+
+* 자동
+mount
+umount / eject
+
+파티션
+	format
+		파일을 저장하는 방식
+		윈도우 	-fat(16,32,exfat),ntfs
+		리눅스	-ext2,ext3,xfs
+		맥
+
+seilnux	-	Secure Linux
+	-	파일시스템 변화를 감지
+
+firewall 	-	방화벽
+	-	개방 포트
+	-	접속 아이피
+
+SSHD (Secure shell deamon)
+	- 원격 터미널 접속용 서버
+	- 22번
+
+	- linux 	- ssh
+	- window - SecureCRT -> putty
