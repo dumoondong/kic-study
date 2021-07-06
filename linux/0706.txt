@@ -1,0 +1,7 @@
+mysqldump -h 192.168.0.8 -u root -p sample > sample.sql
+
+cat sample.sql
+
+mysqldump -h 192.168.0.8 -u root -p sample zipcode > zipcode.sql
+
+cat zipcode.sql
