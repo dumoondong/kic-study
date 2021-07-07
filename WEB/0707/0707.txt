@@ -1,0 +1,25 @@
+리눅스 활용
+	- 기본 명령어
+	- 서버 구축법
+		-순서대로 정리 ....
+		*버전(최신 자료 ...)
+
+	* 가상화 기반으로 서비스
+	=> 아마존 웹 서비스(aws)
+	=> 네이버 클라우드 
+	*webhosting
+
+web site
+web 1.0
+	client		->		server
+			<- html/css/js	<-웹프로그램언어
+web 2.0
+	client		->	server
+			<- data(csv,xml,json)
+
+json 검사 https://jsonlint.com/
+
+javascript
+	ajax(asynchronous javascript and xml)
+	XMLHttpRequest
+		URLOpenConnection
