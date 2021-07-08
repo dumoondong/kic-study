@@ -1,0 +1,20 @@
+web site
+	web 1.0
+		웹 프로그램의 처리 결과 : html + css +js(디자인된 페이지)
+	web 2.0
+		ajax(google => v8)
+		웹 프로그램의 처리 결과 : 데이터(csv,xml,json)
+
+		=>websocket(실시간 : 예매)
+
+시도
+http://www.kma.go.kr/DFSROOT/POINT/DATA/top.json.txt
+구군
+http://www.kma.go.kr/DFSROOT/POINT/DATA/mdl.[시도코드2자리].json.txt
+http://www.kma.go.kr/DFSROOT/POINT/DATA/mdl.11.json.txt
+동
+http://www.kma.go.kr/DFSROOT/POINT/DATA/leaf.[시도,군구코드5자리].json.txt
+http://www.kma.go.kr/DFSROOT/POINT/DATA/leaf.11500.json.txt
+
+동네날씨
+http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1150053000
