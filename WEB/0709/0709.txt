@@ -1,0 +1,5 @@
+javascript
+	- ajax
+	- XMLHttpRequest 비동기 요청 = 원격(자체정보, OpenAPI,크롤링)에서 제공하고 있는 데이터를 읽어올 수 있다.
+
+OpenAPI,크롤링 + 자체 데이터 => 비즈니스 모임 => Mashup Service
