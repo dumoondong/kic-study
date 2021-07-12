@@ -1,0 +1,48 @@
+ajax
+	client	- front - end
+		- UI/UX 중심
+		- javascript(ecmascript)
+		...
+		- spa
+
+
+	server	- back - end
+		- 데이터(xml,json,api) 중심
+		- java,c#,python...
+
+		* mvc model2 ..
+*풀스택
+*테크 트리
+
+jQuery
+	core
+		jquery.com
+	ui
+		pc
+		mobile
+
+라이브러리 제공
+1.
+	compress		서비스용
+	<- zipping (소스 내부의 공백, 탭, 엔터를 제거해서 다운로드 파일 사이즈를 축소)
+	uncompress 	개발용
+
+1.window.onload - dom
+	window.onload
+	$(document).ready(function(){
+	
+	});
+
+jQuery Core
+	js -> select(css selector와 동일) -> html
+
+contains
+eq
+gt
+lt
+has
+nth-child(반복)
+
+
+
+
