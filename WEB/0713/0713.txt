@@ -1,0 +1,21 @@
+ECMAScript(Javascript / js)
+	-  기본문법
+		문법
+		내장 라이브러리
+			기본객체
+			BOM
+			DOM
+		ajax
+	* 이클립스 -> Visual Studio Code(Atom), WebStorm
+	* jQuery
+		Core
+			1.selector
+			2.메서드
+			3.ajax
+
+			*라이브러리
+				zipping
+				CDN
+		UI
+		Mobile
+		...
