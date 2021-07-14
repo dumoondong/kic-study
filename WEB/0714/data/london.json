@@ -1,0 +1,106 @@
+{
+	"style": "MEDIUM",
+	"totalResultsCount": 6987,
+	"data": 
+[{
+	"lng": "-0.12553275",
+	"geonameid": "2643743",
+	"countrycode": "GB",
+	"name": "London",
+	"countryname": "United Kingdom",
+	"seq": "1",
+	"lat": "51.50841526",
+	"fcl": "P",
+	"fcode": "PPLC"
+}, {
+	"lng": "-81.23304239",
+	"geonameid": "6058560",
+	"countrycode": "CA",
+	"name": "London",
+	"countryname": "Canada",
+	"seq": "2",
+	"lat": "42.98338928",
+	"fcl": "P",
+	"fcode": "PPL"
+}, {
+	"lng": "27.91162491",
+	"geonameid": "1006984",
+	"countrycode": "ZA",
+	"name": "East London",
+	"countryname": "South Africa",
+	"seq": "3",
+	"lat": "-33.01528509",
+	"fcl": "P",
+	"fcode": "PPL"
+}, {
+	"lng": "-0.08900642",
+	"geonameid": "2643744",
+	"countrycode": "GB",
+	"name": "City",
+	"countryname": "United Kingdom",
+	"seq": "4",
+	"lat": "51.51333640",
+	"fcl": "A",
+	"fcode": "ADM2"
+}, {
+	"lng": "-84.08326460",
+	"geonameid": "4298960",
+	"countrycode": "US",
+	"name": "London",
+	"countryname": "United States",
+	"seq": "5",
+	"lat": "37.12897710",
+	"fcl": "P",
+	"fcode": "PPL"
+}, {
+	"lng": "-0.07630348",
+	"geonameid": "6286786",
+	"countrycode": "GB",
+	"name": "The Tower of London",
+	"countryname": "United Kingdom",
+	"seq": "6",
+	"lat": "51.50823496",
+	"fcl": "S",
+	"fcode": "CSTL"
+}, {
+	"lng": "112.53333330",
+	"geonameid": "1879967",
+	"countrycode": "",
+	"name": "London Reefs",
+	"countryname": "",
+	"seq": "7",
+	"lat": "8.85000000",
+	"fcl": "U",
+	"fcode": "RFSU"
+}, {
+	"lng": "-0.16666670",
+	"geonameid": "2648110",
+	"countrycode": "GB",
+	"name": "Greater London",
+	"countryname": "United Kingdom",
+	"seq": "8",
+	"lat": "51.50000000",
+	"fcl": "A",
+	"fcode": "ADM2"
+}, {
+	"lng": "6.01666670",
+	"geonameid": "2661811",
+	"countrycode": "CH",
+	"name": "London",
+	"countryname": "Switzerland",
+	"seq": "9",
+	"lat": "46.16666670",
+	"fcl": "H",
+	"fcode": "STM"
+}, {
+	"lng": "-0.13333330",
+	"geonameid": "3333156",
+	"countrycode": "GB",
+	"name": "London Borough of Islington",
+	"countryname": "United Kingdom",
+	"seq": "10",
+	"lat": "51.53333330",
+	"fcl": "A",
+	"fcode": "ADM2"
+	}]
+}
