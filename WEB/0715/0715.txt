@@ -1,0 +1,20 @@
+프로그램
+	1.흐름(경험)
+	2.에러 파악
+		피곤
+
+address.jsp
+[
+	{
+		zipcode:
+		sido:
+		gugun:
+		dong:
+		ri:
+		bunji:
+	}
+]
+
+TTS	(Text to Speech)
+STT	(Specch to Text)
+		-머신러닝
