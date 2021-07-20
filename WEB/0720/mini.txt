@@ -1,0 +1,10 @@
+CREATE TABLE mini(
+	seq int(4) not null primary key auto_increment,
+	title VARCHAR(20),
+	name VARCHAR(20),
+	email VARCHAR(20),
+	password VARCHAR(20),
+	content VARCHAR(20)
+);
+
+INSERT INTO mini(seq,title,name,email,password,content) VALUES('1','1','a','d','1','a');

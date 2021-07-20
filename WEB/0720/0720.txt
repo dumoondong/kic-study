@@ -1,0 +1,13 @@
+jQuery UI
+	- front design
+	- swing
+	- event
+
+*protocol
+
+MVC Model2
+	- back end -data
+	* parameter / url()(*.do) ,(*.json)
+	- json/xml/csv -jsp
+
+ajax(websocket: 실시간)
