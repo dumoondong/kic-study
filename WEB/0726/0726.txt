@@ -1,0 +1,24 @@
+1. Javascript Framework
+	=> SPA(Single Page Application) = swing
+			=>web 2.0(ajax - websocket(실시간))
+	jQuery Core
+	jQuery UI
+		=> ECMAScript
+		=> vue/react
+
+	https://sweetalert2.github.io
+	https://highcharts.com
+
+1. 크로스 브라우징
+	브라우저 종류별 호환성
+2.반응성
+	화면 해상도
+		pc
+		mobile
+	부트스트랩
+	https://getbootstrap.com
+	http://bootstrapk.com
+
+	1.반응성
+	2.프로젝트를 위한 템플릿 ...
+	
