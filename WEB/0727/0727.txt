@@ -1,0 +1,46 @@
+임베디드 시스템
+	마이크로 비트
+		=> 스크래치 / 엔트리
+		=> C언어/Python
+	아두이노
+		=> C 언어
+	라즈베리 파이
+		=> OS
+		+ 센서
+		+ 외부기기
+
+1. 크로스 브라우저
+	브라우저 종류
+	html 권고안
+	* jquery UI
+		분야
+		pc / mobile
+2. 반응성
+	해상도
+		pc
+		mobile
+		tablet
+	* bootstrap
+		통합
+
+bootstrap
+	1. 반응형 웹사이트 제작 프레임워크
+	2. CSS 디자인 제공(테마)
+	3. UI 컨트롤
+	* 무료 웹사이트 템플리트
+		html(분석 - 탭)
+
+bootstrap 반응성
+	grid - 화면 12개 컬럼으로 분할한 뒤에 배치
+		컬럼에 크기는 화면에 해상도에 따라 다르다.
+
+bootstrap css - 클래스
+	폰트
+	색
+bootstrap ui
+	table
+	alert
+
+* jsp web 1.0 => web 2.0
+
+
