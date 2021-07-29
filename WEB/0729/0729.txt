@@ -1,0 +1,15 @@
+반응성 게시판 만들기
+		SPA			(*)
+			입력
+				옆
+				Modal
+			* ajax
+		MPA
+			각 장을 분리
+
+1.반응성 페이지 만들기 - 제출
+	* album / 일반게시판
+	1.wrtie/modify/delete
+	2.list
+	3.view
+2. 실제 데이터 연결
