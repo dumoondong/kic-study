@@ -1,0 +1,22 @@
+캡쳐
+	-부트스트랩 게시판
+시험..
+	bootstrap => jqery
+	전번 시험 7문제 ...
+
+게시판
+	*포트폴리오(SPA)
+	jQuery 게시판
+	Bootstrap 게시판
+		front-end
+			*node.js
+			=> vue
+			=> react
+		back-end
+			=> MVC framework
+			=> myBatis
+			=> Spring
+출석률 80%
+Java
+=> myBatis
+=> Spring
