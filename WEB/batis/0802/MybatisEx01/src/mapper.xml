@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper.xml -->
+<mapper namespace="mybatis">
+	<select id="select1" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where deptno=10
+	</select>
+	
+	<select id="select2" parameterType="String" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where deptno=#{deptno}
+	</select>
+	
+	<select id="select3" parameterType="DeptTO" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where deptno=#{deptno}
+	</select>
+	
+	<select id="select4" parameterType="DeptTO" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where deptno=#{deptno} or dname=#{dname}
+	</select>
+	
+	<select id="select5" resultType="HashMap">
+		select deptno, dname, loc
+		from dept
+		where deptno=10
+	</select>
+	
+	<select id="selectlist1" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+	</select>
+	
+	<select id="selectlist2" parameterType="String" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where dname=#{dname}
+	</select>
+	
+	<select id="selectlist3" parameterType="String" resultType="DeptTO">
+		select deptno, dname, loc
+		from dept
+		where dname like concat(#{dname}, '%' )
+	</select>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper2.xml -->
+<mapper namespace="mybatis2">
+	<insert id="insert1" parameterType="DeptTO">
+		insert into dept2 (deptno, dname,loc)
+		values (#{deptno},#{dname},#{loc} )
+	</insert>
+	<update id="update1" parameterType="DeptTO">
+		update dept2
+		set dname= #{dname}
+		where deptno= #{deptno}
+	</update>
+	<delete id="delete1" parameterType="DeptTO">
+		delete from dept2
+		where deptno=#{deptno}
+	</delete>
+	<insert id="insertzipcode" parameterType="ZipcodeTO">
+		insert into zipcode (zipcode,sido,gugun,dong,ri,bunji,seq)
+		values (#{zipcode},#{sido},#{gugun},#{dong},#{ri},#{bunji},#{seq})
+	</insert>
+	
+	<select id="selectzipcode" parameterType="String" resultType="ZipcodeTO">
+		select zipcode,sido,gugun,dong,ri,bunji,seq
+		from zipcode
+		where dong like concat(#{dong},'%')
+	</select>
+</mapper>
