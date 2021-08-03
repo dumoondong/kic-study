@@ -1,0 +1,8 @@
+myBatis(iBatis) - sql mapper framework
+	sql -> java 클래스 외부로 분리
+	분리
+		sql		xml
+		java		sql id
+1. 프로젝트 세팅
+	*.jar
+	*.xml
