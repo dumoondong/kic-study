@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="action1" class="com.exam.ex02.WriteAction">
+		<property name="writer" value="홍길동"></property>
+	</bean>
+	
+	<bean id="basicAdvice1" class="com.exam.ex02.BasicAdvice1" />
+	
+	<!-- Weaving -->
+	<aop:config>
+		<aop:aspect ref="basicAdvice1">
+			<aop:pointcut id="pointCut" expression="execution(* execute())"/>
+			<!--  <aop:around method="logAround" pointcut-ref="pointCut"/>-->
+			<!--  <aop:before method="before" pointcut-ref="pointCut"/> -->
+			<aop:after method="after" pointcut-ref="pointCut"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

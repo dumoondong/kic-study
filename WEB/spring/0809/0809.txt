@@ -1,0 +1,31 @@
+스프링 프로젝트 ...
+	..
+	스프링 프레임워크
+		DI		Depency Injection
+					생성자		-초기화
+					프로퍼티
+					xml / annotation(POJO)
+		AOP = fliter
+			(Aspecct Orientation(중심) Programming)
+			객체 생성 이전 / 이후
+
+			Aspect - 공통(로그인 / 검사 / 보안)기능
+				cross-cutting concern
+			언제 적용할지(호출 전, 호출 후) - Advice
+			적용 가능시점(메서드 호출, 필드 값) - joinpoint
+				=> pointcut
+			적용 - weaving
+			
+			AspectJ (Apache) => Spring 부분집합
+
+			1. 컴파일 시		-AspectJ
+			2. 클래스 로딩		-AspectJ
+			3. 런타임			-AspectJ / spring
+
+			XML
+			AspectJ
+				http://www.eclipse.org/aspectj/
+			스프링 APIs - annotation
+
+		MVC (*)
+동영상..

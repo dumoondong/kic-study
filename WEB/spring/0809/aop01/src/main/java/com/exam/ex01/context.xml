@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- AOP 설정 -->
+	<bean id="basicAdvice1" class="com.exam.ex01.BasicAdvice1" />
+	<bean id="pointcutAdvice1" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="basicAdvice1" />
+		<property name="pointcut">
+			<bean class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+				<property name="pattern" value=".*execute.*" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="basicAdvice2" class="com.exam.ex01.BasicAdvice2" />
+	<bean id="pointcutAdvice2" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="basicAdvice2" />
+		<property name="pointcut">
+			<bean class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+				<property name="pattern" value=".*execute.*" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="pointcutAdvice3" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice">
+			<bean class="com.exam.ex01.BasicAdvice3"></bean>
+		</property>
+		<property name="pointcut">
+			<bean class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+				<property name="pattern" value=".*execute.*" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="action" class="com.exam.ex01.WriteAction">
+		<property name="writer">
+			<value>박문수</value>
+		</property>
+	</bean>
+	
+	<!-- AOP 적용 -->
+	<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="action" />
+		<property name="interceptorNames">
+			<list>
+				<value>pointcutAdvice1</value>
+				<value>pointcutAdvice2</value>
+				<value>pointcutAdvice3</value>
+			</list>
+		</property>
+		
+	</bean>
+</beans>
