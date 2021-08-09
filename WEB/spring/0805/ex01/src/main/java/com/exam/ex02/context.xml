@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<!-- scope="singleton"는 디폴트로 생략가능 -->
+	<bean name="helloBean1" class="com.exam.ex02.HelloBean"/>
+	<bean name="helloBean2" class="com.exam.ex02.HelloBean" scope="singleton"/>
+	<!-- 인스턴스 멤버변수 -->
+	<bean name="helloBean3" class="com.exam.ex02.HelloBean" scope="prototype"/>
+
+</beans>

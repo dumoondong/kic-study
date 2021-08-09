@@ -1,0 +1,35 @@
+Spring Framework
+	1.
+		* 위임 -> 참조변수
+		class 생성, 소멸에 관한 lifecycle을 관리하는 프레임워크
+	2. 전처리나 후처리
+	
+	* 수동
+	new class 생성
+	가비지 컬렉션 소멸
+
+	=> mvc model 방법
+	
+https://spring.io
+	framework
+		*DI	- Dependency Injection(의존 주입)
+			class 생성(*), 소멸에 관한 lifecycle을 관리
+				생성 + 초기화 위임 -> 의존 주입
+					주입
+						xml
+						annotation
+		AOP	- Aspect Oriented Programming(관점 중심 프로그래밍)
+			전처리 / 후처리
+			
+https://www.egovframe.go.kr/
+
+eclipse => 개발
+	eclipse + STS
+		신형
+			spring boot 환경
+				자동환경
+		구형
+			설정 수동
+				Java Project + library 수동 추가
+				Maven Project + library 설정만
+

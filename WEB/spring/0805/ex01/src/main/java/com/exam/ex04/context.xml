@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean name="action1" class="com.exam.ex04.WriteAction" scope="prototype" />
+	
+	<bean id="to" class="com.exam.ex04.BoardTO" scope="prototype"/>
+	<bean name="action2" class="com.exam.ex04.WriteAction" scope="prototype">
+		<constructor-arg>
+			<ref bean="to"/>
+		</constructor-arg>
+	</bean>
+	
+	<bean name="action3" class="com.exam.ex04.WriteAction" scope="prototype">
+		<!--
+		<constructor-arg>
+			<ref bean="to"/>
+		</constructor-arg>
+		-->
+		<constructor-arg>
+			<bean class="com.exam.ex04.BoardTO" />
+		</constructor-arg>
+		<constructor-arg>
+			<value>홍길동</value>
+		</constructor-arg>
+	</bean>
+</beans>

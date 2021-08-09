@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="to1" class="com.exam.ex04.BoardTO" scope="prototype">
+		<property name="seq" value="1"/>
+		<property name="subject" value="제목" />
+	</bean>
+	
+	<!-- 네임스페이스 사용 -->
+	<bean id="to2" class="com.exam.ex04.BoardTO" p:seq="2" p:subject="제목2" />
+</beans>
