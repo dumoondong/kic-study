@@ -1,0 +1,23 @@
+package com.exam.ex02;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.exam.ex01.BoardListTO;
+import com.exam.ex01.BoardTO;
+
+public class App02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GenericXmlApplicationContext ctx
+		= new GenericXmlApplicationContext("classpath:com/exam/ex01/context.xml");
+		
+		BoardListTO listTO = (BoardListTO)ctx.getBean("listTO");
+		
+		for(BoardTO to : listTO.getBoardList()) {
+			System.out.println(to.getSeq());
+			System.out.println(to.getSubject());
+		}
+	}
+
+}

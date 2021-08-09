@@ -1,0 +1,27 @@
+spring
+	java
+	kotlin		(android(google), -->)
+			https://spring.io/guides/tutorials/spring-boot-kotlin/
+	groovy
+
+spring 생성 방법
+	개발용 IDE
+		eclipse
+			+ STS plug-in
+		Mac  + intelliJ JDEA
+		Visual Studio Code
+	library 추가
+	1.수동
+	2.프로젝트 관리 도구
+		maven / gradle
+
+spring 관리
+	pom.xml
+	Spring Bean Configuration => 객체의 의존성 설정	- DI
+		생성
+			<bean name="helloBean1" class="com.exam.ex02.HelloBean"/>
+			<bean id="helloBean2" class="com.exam.ex02.HelloBean" scope="singleton"/>
+		초기화
+			<constructor-arg>
+			<property name="seq" value="1" />
+

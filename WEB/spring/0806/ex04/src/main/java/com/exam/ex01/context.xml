@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="listTO" class="com.exam.ex01.BoardListTO" scope="prototype">
+		<property name="userList">
+			<list>
+				<value>홍길동</value>
+				<value>박문수</value>
+			</list>
+		</property>
+		<property name="boardList">
+			<list>
+				<bean class="com.exam.ex01.BoardTO">
+					<property name="seq" value="1"/>
+					<property name="subject" value="제목1"/>
+				</bean>
+				<bean class="com.exam.ex01.BoardTO">
+					<property name="seq" value="2"/>
+					<property name="subject" value="제목2"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+</beans>

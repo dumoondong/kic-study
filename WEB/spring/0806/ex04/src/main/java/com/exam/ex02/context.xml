@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="listTO" class="com.exam.ex02.BoardListTO" scope="prototype">
+		<property name="boardMaps">
+			<map>
+				<entry key="to1">
+					<bean class="com.exam.ex02.BoardTO">
+						<property name="seq" value="1"></property>
+						<property name="subject" value="제목 1"></property>
+					</bean>
+				</entry>
+				<entry key="to2">
+					<bean class="com.exam.ex02.BoardTO">
+						<property name="seq" value="2"></property>
+						<property name="subject" value="제목 2"></property>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>
