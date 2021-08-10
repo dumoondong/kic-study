@@ -1,0 +1,14 @@
+AOP
+Spring MVC
+	Dynamic Web Project
+		- 수동으로 라이브러리 추가
+	Maven Project
+		- 자동으로 라이브러리 추가
+			pom.xml
+
+	web.xml(에러)
+		DispatcherServlet
+			설정파일
+		한글설정
+	설정파일 <= Spring Bean Configuration
+		서블내용을 입력
