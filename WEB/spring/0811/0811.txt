@@ -1,0 +1,9 @@
+Spring -> MVC model2 구현
+	servlet => front controller - DispatcherServlet
+			* 컨트롤
+		back controller - Controller
+				ModelAndView
+		=> view
+
+write.do		-> write.jsp
+write_ok.do	-> write_ok.jsp
