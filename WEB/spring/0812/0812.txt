@@ -1,0 +1,19 @@
+Spring Framework
+	DI(loC)		=> MVC
+	AOP
+
+*
+
+model1 => MVC Model2
+model1 => Spring MVC Model2
+		XML
+		->
+		Annotation
+	
+		Spring legacy => Spring boot
+			spring maven
+			=> maven + 추가 설정
+
+*
+model1(DAO)
+	메서드 1:1 웹페이지
