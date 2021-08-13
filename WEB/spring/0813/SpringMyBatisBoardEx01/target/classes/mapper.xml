@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis">
+	<select id="list" resultType="model1.BoardTO">
+		select seq, subject, writer, date_format(wdate, '%Y-%m-%d') wdate, hit, datediff(now(), wdate) wgap
+		from board1
+		order by seq desc
+	</select>
+	<select id="view" parameterType="model1.BoardTO" resultType="model1.BoardTO">
+		select seq, subject, writer, mail, wip, wdate, hit, content
+		from board1
+		where seq=#{seq}
+	</select>
+	
+	<update id="view_hit" parameterType="model1.BoardTO">
+		update board1 set hit=hit+1 where seq=#{seq}
+	</update>
+	<!-- write_ok -->
+	<insert id="write_ok" parameterType="model1.BoardTO">
+		insert into board1
+		values ( 0, #{subject}, #{writer}, #{mail}, #{password}, #{content}, 0, #{wip}, now() )
+	</insert>
+	<!-- modify -->
+	<select id="modify" parameterType="model1.BoardTO" resultType="model1.BoardTO">
+		select seq, subject, writer, mail, wip, wdate, hit, content
+		from board1
+		where seq=#{seq}
+	</select>
+	<!-- modify_ok -->
+	<update id="modify_ok" parameterType="model1.BoardTO">
+		update board1
+		set subject=#{subject}, mail=#{mail}, content=#{content}
+		where password=#{password} and seq=#{seq}
+	</update>
+	<!-- delete -->
+	<select id="delete" parameterType="model1.BoardTO" resultType="model1.BoardTO">
+		select seq, subject, writer
+		from board1
+        where seq=#{seq}		
+	</select>
+	<!-- delete_ok -->
+	<delete id="delete_ok" parameterType="model1.BoardTO">
+		delete from board1
+		where password=#{password} and seq=#{seq}	
+	</delete>
+</mapper>
