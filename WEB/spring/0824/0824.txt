@@ -1,0 +1,15 @@
+=> 전자정부프레임워크
++MyBatis
+spring framework
+	di	=> mvc
+	aop
+
+spring boot
+
+=> view template
+	jsp
+	=> velocity ....
+
+상세기획서
+	uml,erd,dfd
+실행되는 메인페이지
