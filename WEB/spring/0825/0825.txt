@@ -1,0 +1,20 @@
+Javascript 이용한 프로그램
+	browser -> 내장
+	* node.js - window application(Java)
+
+https://nodejs.org
+
+Java - Source - compile -> class -> JVM(Java Virtual Machine : RunTime(실행기)
+window application - jvm => java(CUI) + swing(GUI)
+		-> node.js => Javascript(CUI) + eletron(GUI) : VisualStudio Code/Atom
+				https:electronjs.org/
+
+web application		-> 웹서버 => jsp
+			-> node.js(웹서버:소켓) => js
+
+java > js
+	enterprise(대기업) => 분산, 대용량
+
+REPL(Read,Eval,Pring,Loop)
+
+npm(node package manager)
