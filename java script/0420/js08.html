@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            'use strict';
+            /*
+        document.write('<table border = "1" width = "800">');
+            for( let i=1; i<=10; i++) {
+                document.write('<tr>');
+                for(let j=1; j<=10; j++){
+                if(j<=i) {
+                    document.write('<td>*</td>');
+                }else {
+                    document.write('<td></td>');
+                }
+            }
+            document.write('</tr>');
+        }
+        document.write('<table>');
+        */
+
+        let html = '<table width = "300" border="1" cellspacing = "0">';
+            for ( let i=1; i<=10; i++) {
+                html+='<tr>';
+                for(let j=1; j<=10; j++){
+                if(j<=i) {
+                    html+='<td>*</td>';
+                }else {
+                    html+='<td></td>';
+                }
+            }
+            html+='</tr>';
+        }
+    html+= '<table>';
+
+        document.write(html)
+            </script>
+            <!--
+            <table border ="1" width = "800">
+                <tr>
+                    <td>Hello</td>
+                    <td>Hello</td>
+                    <td>Hello</td>
+                </tr>
+            </table>
+            <table border ="1" width = "800">
+                    <td>Hello</td>
+                    <td>Hello</td>
+                    <td>Hello</td>
+                </tr>
+            </table>
+            <table border ="1" width = "800">
+                <tr>
+                    <td>Hello</td>
+                    <td>Hello</td>
+                    <td>Hello</td>
+                </tr>
+            </table> 
+        -->
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            window.onload = () =>{
+                //동적으로 이벤트 적용
+                let btn1 = document.getElementById('btn1');
+                btn1.onclick = () =>{
+                    alert('btn1 클릭');
+                };
+                document.getElementById('btn2').onclick = () =>{
+                    alert('btn2 클릭');
+                    document.getElementById('btn2').onclick = null;
+
+                };
+                document.getElementById('btn3').onclick = () =>{
+                    alert('btn3 클릭');
+                };
+                document.getElementById('div').onclick = () =>{
+                    alert('btn3 클릭');
+                };
+            };
+        </script>
+    </head>
+    <body>  
+        <input type="button" id="btn1" value="이벤트 발생 1"/>
+        <input type="button" id="btn2" value="이벤트 발생 2"/>
+
+        <button id = "btn3">이벤트발생 3</button>
+        <div id="div">이벤트 발생 4</div>
+        
+    </body>
+</html>

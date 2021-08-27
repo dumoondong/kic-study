@@ -1,0 +1,15 @@
+내장객체 - 브라우저의 ECMAScript 해석기가 포함하고 있는 라이브러리(API)
+
+기본객체
+	- 자료형과 관련된 객체
+		-한 개의 데이터 ..
+		-여러개의 데이터 - 배열 ..... Set ....
+BOM
+	-Browser Object Model
+	window				-브라우저			(*,open)
+		navigator			-브라우저 상태
+		history			-기록			(back())
+		screen			-해상도
+		location			-url			(href)
+		document
+DOM - document				-html

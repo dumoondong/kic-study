@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            const emitEvent = () =>{
+                alert('이벤트 발생');
+            };
+            const focusEvent= () =>{
+                console.log("이벤트발생");
+            }
+        </script>
+    </head>
+    <body>  
+        <!-- 인라인 이벤트 모델 -->
+        <input type="button" value="이벤트 발생" onclick="emitEvent()"/>
+        <input type="button" value="마우스 오버 발생" onmouseover="emitEvent()"/>
+        <form>
+            <input type="text" />
+            <input type="text" onfocus="focusEvent()"/>
+        </form>
+        <!--
+            마우스 이벤트
+                클릭        onclick / ondbclikc
+                오버        onmouseover/onmouseout, onmouseup/onmousedown/onmousemove
+
+            키보드 이벤트
+                onkeydown, onkeypress, onkeyup      -input
+            html 제어 이벤트
+                onfocus, onblur, onchange, onselect, onsubmit
+            window
+                onload
+                    - window.onload
+        -->
+    </body>
+</html>

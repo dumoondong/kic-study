@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+                let rFunc = function(){
+                    return function(){
+                        console.log('Hello Function');
+                    }
+                }
+
+                let rFunc2 = function(type){
+                    if(type ==1){
+                        return function(){
+                            console.log( '함수 선언 1 호출');
+                        }
+                    } else{
+                        return function(){
+                            console.log( '함수 선언 2 호출');
+                        }
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           'use strict';
+
+           let result = rFunc()
+           result();
+           console.log(typeof result);
+           console.log(result);
+
+           //
+           rFunc()(); 
+           rFunc2(0)();
+          
+        </script>
+    </body>
+</html>

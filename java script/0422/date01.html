@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let today = new Date();
+            console.log(today);
+
+            console.log(today.toLocaleString());
+            let strToday = today.toLocaleString();
+            console.log(strToday.substring(0,13));
+
+            console.log(today.getFullYear());       //년도
+            console.log(today.getMonth()+1);        //월
+            console.log(today.getDate());           //일
+            console.log(today.getDay());            //요일(0: 일요일)
+
+            //getHour(), getMinutes(), getSeconds()
+            //Timestamp
+            //1970년 1월 1일 0 시 00(Unix Date)부터 현재까지 초
+            console.log(today.getTime()); 
+
+            let date1 = new Date(2021,4-1, 9);
+            console.log(date1.toLocaleString());
+
+            //2021 11 31 ....
+            let date2 = new Date(2021, 11-1, 30);
+            console.log(date2.toLocaleString());
+
+        </script>
+    </body>
+</html>

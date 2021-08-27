@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            //내부 함수
+            let outer = function(){
+                //외부 함수 부분
+                let inner1 = function(){
+                    //내부 함수 부분
+                    console.log('inner1 실행');
+                }
+                let inner2 = function(){
+                    //내부 함수 부분
+                    console.log('inner1 실행');
+                }
+                console.log('outer 실행');
+
+                //내부에서 호출
+                inner1();
+                inner2();
+            }              
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           'use strict';
+           outer();
+        </script>
+    </body>
+</html>

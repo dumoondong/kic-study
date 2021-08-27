@@ -1,0 +1,96 @@
+ECMAScript (유럽표준 -> 표준 : javascript)
+1.브라우저 실행
+	브라우저 내부에 ECMAScript 해석포함 (V8 Engline)
+	*브라우저 마다 V8 Engine의 버전이 다르다...
+2.runtime(system) + node.js
+	node.js <- V8 Engine
+프로그램 언어
+데이터	-자료
+	자료형
+		bool(ean)
+		number(integer, double / 진수)
+		string
+		undefined / null
+		object
+	변수/상수
+		이름규칙
+		1.문법상		-에러
+		2.네이밍률(컨벤션)	-팀에서 왕따
+			*탭키로 줄 맞추기
+			변수이름: 소문자로 시작/ 여러단어 중복되면 대문자 표기
+			상수이름: 대문자
+		*구형 문법에서
+			이름=값;
+		*신형 문법에서
+			var 이름 = 값;
+			let 이름 = 값 	- 변수선언
+			const 이름 = 값;	 -상수선언
+		변수의 선언
+			let 이름;
+		변수의 초기화
+			이름 = 값;	-대입/할당
+		*문장 끝에서 ;
+		'use strict';/"use strict";
+	각 자료형별 연산자
+	대입(할당)연산자 (=)
+	number
+		산술연산자(/)
+		복합 대입 연산자
+		증감연산자
+	string
+		문자열 연결 연산자
+	bool
+		비교연산자
+		논리연산자	(!,&&,ll)
+	삼항연산자
+	일치(동등) 연산자 (===)
+	typeof	자료형 표시 연산잔
+
+제어(*)	=> 알고리즘(중첩) => 문제해결 능력
+	*잔머리
+	*다른 사람의 소스를 많이 본다...
+*조건에 의한 분기
+	단순 if
+		if(조건){
+		}
+		if(조건){
+		} else{
+		}
+	삼항연산자 (조건) ? (참일 처리식) : (거짓일때 처리식);
+	선택적 if
+		if(조건){
+		} else if(조건){
+		} else if(조건){
+		} else{
+		}
+	switch(변수){
+	case 값:"
+		break;
+	case 값:
+		break;
+	case 값:
+		break;
+	default:
+		break;
+	}
+*조건에 의한 반복
+*조건
+	비교연산자와 논리연산자의 결과(true/false)
+*flowchart	-DFD(Data flow Diagram)
+
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Strict_mode
+https://cjmyun.tripod.com/Knowledgebase/DFD.htm
+
+
+루프
+	무한루프		-끝이 없는(조건이 항상 True)
+	
+	유한루프		-끝이 있는(
+루프
+	for
+		중첩 for
+
+
+
+

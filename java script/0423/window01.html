@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let output = '';
+            for(let key in window){
+                if(key != 'external'){
+                    output += '*' + key+':' + window[key]+'\n';
+                }
+            }
+            // console.log(output);
+            console.log(window.screenTop);
+            console.log(window.screenLeft);
+            //window.alert()/window.confirm()...
+            //alert, confirm, prompt
+            // window.alert('난알림창');
+            alert('난 알림창');
+        </script>
+    </body>
+</html>

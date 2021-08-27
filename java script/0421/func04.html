@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            //익명 함수 선언
+            let func1 = function(){
+                console.log('Hello Function');
+            };
+           
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           'use strict';
+           func1();
+           //할당 : 얕은 복사
+           //일급 함수:선언적인 내용을 변수의 값으로 취급
+           let func2 = func1;
+           func2();
+           console.log(typeof func2);
+           console.log(func2);
+          
+        </script>
+    </body>
+</html>
